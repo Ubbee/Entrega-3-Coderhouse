@@ -1,0 +1,545 @@
+/* PALETA DE COLORES ELEGIDA */
+/* Naranja: #ff6700 - Casi Blanco: #ebebeb - Gris Claro: #c0c0c0 - gris letra: #4B4B4C - Azul marino: #3a6ea5 - Azul: #004e98 */
+/* IDEA: LANDING DE GIMNASIO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white !important;
+}
+
+/* ------------------HEADER-------------------- */
+.navv {
+  display: flex;
+  padding: 0px 25px;
+}
+.navv .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navv img {
+  margin-left: 25px;
+  width: 100px;
+}
+.navv .img-ul {
+  display: flex;
+  flex-direction: column;
+}
+.navv .img-ul ul {
+  margin-left: 20PX !important;
+}
+.navv .img-ul ul li {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.navv .img-ul ul li .boton-contacto-uno {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  background-color: #64a8f1;
+  color: #004e98 !important;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+.navv .img-ul ul li:hover {
+  background-color: #64a8f1;
+}
+.navv .img-ul ul li:hover a:hover {
+  color: #004e98 !important;
+}
+.navv .btn-uno {
+  display: none;
+}
+.navv .btn-dos {
+  display: block;
+}
+
+/* -------------------- */
+/* -------------------CUERPO------------------ */
+body {
+  /* ------------------INICIO----------------- */
+  /* --------------- */
+  /* --------------------SECCIONES----------------- */
+  /* --------------- */
+}
+body .inicio-p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow", sans-serif;
+  background-color: #004e98;
+  padding-top: 100px;
+}
+body .inicio-p div {
+  margin-left: 20px;
+  position: absolute;
+  z-index: 9999;
+  top: 130px;
+}
+body .inicio-p div h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  width: 85%;
+  line-height: 3.3rem;
+  color: white;
+  margin-bottom: 30px;
+}
+body .inicio-p div a {
+  border-radius: 25px;
+  padding: 15px 40px;
+  background-color: whitesmoke;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+body .inicio-p div a img {
+  width: 25px;
+  margin-right: 7px;
+}
+body .inicio-p .img-a {
+  width: 100%;
+  max-height: 700px;
+  clip-path: polygon(58% 43%, 82% 29%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 32% 100%, 0 100%, 0 52%, 30% 51%) !important;
+}
+body .inicio-p::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.411) 0%, transparent 70%);
+  transform: translate(-50%, 1%);
+  pointer-events: none;
+  z-index: 0;
+}
+body .secciones {
+  /* ----------------BENEFICIOS--------------- */
+  /* ----------------- */
+  /* ----------------ENTRENAMIENTO---------------- */
+  /* --------------------------------- */
+  /* ------------EQUIPOS------------- */
+  /* ----------------- */
+}
+body .secciones .app {
+  font-family: "Barlow", sans-serif;
+  margin: 60px 50px 0px 7%;
+  text-align: center;
+}
+body .secciones .app .beneficio {
+  color: #01305c;
+  font-size: 1.1rem;
+}
+body .secciones .app h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #01305c;
+  margin-bottom: 70px;
+  line-height: 1.1;
+}
+body .secciones .app div {
+  display: flex;
+  flex-direction: column;
+}
+body .secciones .app div .imagen-celu {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 10%;
+}
+body .secciones .app div ul {
+  padding-bottom: 50px;
+}
+body .secciones .app div ul li {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+body .secciones .app div ul li img {
+  width: 40px;
+}
+body .secciones .app div ul li p {
+  width: 100%;
+  text-align: start;
+  color: #4B4B4C;
+  margin: 15px;
+}
+body .secciones .app div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body .secciones .app div ul li {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+body .secciones .app div ul li img {
+  width: 40px;
+}
+body .secciones .app div ul li p {
+  width: 100%;
+  text-align: start;
+  color: #4B4B4C;
+  margin: 10px;
+}
+body .secciones .entrenamientos {
+  font-family: "Barlow", sans-serif;
+}
+body .secciones .entrenamientos .grey-zone-dos,
+body .secciones .entrenamientos .grey-zone-uno {
+  background-color: #F5F4F8;
+  text-align: center;
+  padding: 60px 50px 20px 7%;
+}
+body .secciones .entrenamientos .grey-zone-dos h2,
+body .secciones .entrenamientos .grey-zone-uno h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #01305c;
+  margin-bottom: 70px;
+  line-height: 1.1;
+}
+body .secciones .entrenamientos .grey-zone-uno p {
+  color: #01305c;
+  font-size: 1.1rem;
+}
+body .secciones .entrenamientos .grey-zone-dos {
+  transform: translateY(-277px);
+}
+body .secciones .entrenamientos .grey-zone-dos .imagen-icono-pesa {
+  width: 60px;
+  margin-bottom: 40px;
+}
+body .secciones .entrenamientos .grey-zone-dos h2 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+body .secciones .entrenamientos .grey-zone-dos p {
+  color: #013d75;
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+body .secciones .entrenamientos .fondo {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  object-position: center;
+}
+body .secciones .equipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-150px);
+}
+body .secciones .equipos h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #01305c;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+body .secciones .equipos p {
+  color: #01305c;
+  font-size: 1.1rem;
+}
+body .secciones .equipos .card-entrenamiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .secciones .equipos .card-entrenamiento .imagen-celu {
+  width: 90%;
+  border-radius: 25px;
+  margin: 10% auto;
+}
+body .secciones .equipos .card-entrenamiento ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body .secciones .equipos .card-entrenamiento ul li {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+body .secciones .equipos .card-entrenamiento ul li img {
+  width: 40px;
+}
+body .secciones .equipos .card-entrenamiento ul li p {
+  width: 100%;
+  text-align: start;
+  color: #4B4B4C;
+  margin: 10px;
+}
+
+/* --------------- */
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004e98 !important;
+  padding: 20px 30px !important;
+  font-family: "Barlow", sans-serif;
+}
+footer img {
+  width: 80px !important;
+}
+footer h2 {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+footer div ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+footer div ul li {
+  margin-right: 10px;
+}
+footer div ul li img {
+  width: 40px !important;
+}
+
+@media (min-width: 600px) {
+  body {
+    /* ------------------INICIO----------------- */
+    /* --------------- */
+    /* ------------EQUIPOS------------- */
+  }
+  body .inicio-p h1 {
+    font-size: 4rem !important;
+    line-height: 70px !important;
+  }
+  body .inicio-p div {
+    margin-top: 100px;
+  }
+  body .equipos ul {
+    margin-left: 20px;
+    transform: translateY(-40px);
+  }
+  body .equipos ul li p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .btn-uno {
+    display: block !important;
+  }
+  .btn-dos {
+    display: none !important;
+  }
+  body {
+    /* ------------------INICIO----------------- */
+    /* --------------- */
+    /* --------------------SECCIONES----------------- */
+    /* --------------- */
+  }
+  body .inicio-p {
+    display: flex;
+    flex-direction: column;
+    font-family: "Barlow", sans-serif;
+    background-color: #004e98;
+  }
+  body .inicio-p div {
+    padding: 100px 0px 0px 11%;
+  }
+  body .inicio-p div h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    width: 55%;
+    line-height: 4.5rem;
+    color: white;
+    margin-bottom: 50px;
+  }
+  body .inicio-p div a {
+    border-radius: 25px;
+    padding: 15px 40px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  body .inicio-p div a img {
+    width: 25px;
+    margin-right: 7px;
+  }
+  body .inicio-p .img-a {
+    width: 100%;
+    max-height: 700px;
+    clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
+  }
+  body .inicio-p::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.411) 0%, transparent 70%);
+    transform: translate(-50%, 1%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  body .secciones {
+    /* ----------------BENEFICIOS--------------- */
+    /* ----------------- */
+    /* ----------------ENTRENAMIENTO---------------- */
+    /* --------------------------------- */
+    /* ------------EQUIPOS------------- */
+    /* ----------------- */
+  }
+  body .secciones .app {
+    font-family: "Barlow", sans-serif;
+    margin-top: 100px;
+    text-align: center;
+  }
+  body .secciones .app .beneficio {
+    color: #01305c;
+    font-size: 1.1rem;
+  }
+  body .secciones .app h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #01305c;
+    margin-bottom: 70px;
+  }
+  body .secciones .app div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10%;
+  }
+  body .secciones .app div img {
+    width: 47%;
+    max-height: 450px;
+    border-radius: 25px;
+    margin-right: 5%;
+  }
+  body .secciones .app div ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  body .secciones .app div ul li img {
+    width: 30px;
+  }
+  body .secciones .app div ul li p {
+    width: 160px;
+    text-align: start;
+    color: #4B4B4C;
+    margin-top: 15px;
+  }
+  body .secciones .entrenamientos {
+    font-family: "Barlow", sans-serif;
+    margin-top: 70px;
+  }
+  body .secciones .entrenamientos .grey-zone-dos,
+  body .secciones .entrenamientos .grey-zone-uno {
+    background-color: #F5F4F8;
+    text-align: center;
+    padding: 70px 0px 50px;
+  }
+  body .secciones .entrenamientos .grey-zone-dos h2,
+  body .secciones .entrenamientos .grey-zone-uno h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #01305c;
+    margin-bottom: 70px;
+    width: 60%;
+    margin: auto;
+  }
+  body .secciones .entrenamientos .grey-zone-uno p {
+    color: #01305c;
+    font-size: 1.1rem;
+  }
+  body .secciones .entrenamientos .grey-zone-dos {
+    transform: translateY(-277px);
+  }
+  body .secciones .entrenamientos .grey-zone-dos .imagen-icono-pesa {
+    width: 60px;
+    margin-bottom: 40px;
+  }
+  body .secciones .entrenamientos .grey-zone-dos h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  body .secciones .entrenamientos .grey-zone-dos p {
+    color: #013d75;
+    margin-top: 50px;
+    font-size: 1.1rem;
+  }
+  body .secciones .entrenamientos .fondo {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+    object-fit: cover;
+  }
+  body .secciones .equipos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .secciones .equipos h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #01305c;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  body .secciones .equipos p {
+    color: #01305c;
+    font-size: 1.1rem;
+  }
+  body .secciones .equipos .card-entrenamiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  body .secciones .equipos .card-entrenamiento img {
+    width: 45%;
+    border-radius: 30px;
+  }
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #aaaaaa;
+  padding: 20px 70px;
+  margin-top: 100px;
+  font-family: "Barlow", sans-serif;
+}
+footer img {
+  width: 120px;
+}
+footer h2 {
+  color: #004e98;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+footer div ul {
+  display: flex;
+  list-style: none;
+}
+footer div ul li {
+  margin-right: 10px;
+}
+footer div ul li img {
+  width: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

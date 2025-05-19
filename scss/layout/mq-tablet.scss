@@ -1,0 +1,35 @@
+@media (min-width: 600px) {
+    body {
+
+        /* ------------------INICIO----------------- */
+        .inicio-p {
+            h1{
+                font-size: 4rem !important;
+                line-height: 70px !important;
+            }
+            a{
+                
+            }
+            div {
+                margin-top: 100px;
+            }
+
+        }
+
+        /* --------------- */
+        /* ------------EQUIPOS------------- */
+        .equipos {
+
+            ul {
+                margin-left: 20px;
+                transform: translateY(-40px);
+
+                li {
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

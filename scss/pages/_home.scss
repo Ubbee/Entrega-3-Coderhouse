@@ -1,0 +1,375 @@
+/* ------------------HEADER-------------------- */
+.navv {
+    display: flex;
+    padding: 0px 25px;
+
+    .cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 25px;
+        width: 100px;
+    }
+
+
+    .img-ul {
+        display: flex;
+        flex-direction: column;
+
+
+        ul {
+            margin-left: 20PX !important;
+
+            li {
+                padding: 10px;
+                border-radius: 10px;
+                margin-left: 10px;
+
+                .boton-contacto-uno {
+                    font-family: 'Barlow', sans-serif;
+                    font-weight: 700;
+                    background-color: #64a8f1;
+                    color: #004e98 !important;
+                    text-decoration: none;
+                    padding: 15px 30px;
+                    border-radius: 30px;
+                }
+
+                transition: 0.3s;
+            }
+
+            li:hover {
+                background-color: #64a8f1;
+
+                a:hover {
+                    color: #004e98 !important;
+                }
+            }
+        }
+    }
+
+
+
+    .btn-uno {
+        display: none;
+    }
+
+    .btn-dos {
+        display: block;
+    }
+
+
+}
+
+/* -------------------- */
+
+/* -------------------CUERPO------------------ */
+body {
+
+    /* ------------------INICIO----------------- */
+    .inicio-p {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Barlow', sans-serif;
+        background-color: #004e98;
+        padding-top: 100px;
+        
+        div {
+            margin-left: 20px;
+            position: absolute;
+            z-index: 9999;
+            top: 130px;
+            h1 {
+                font-weight: 700;
+                font-size: 3rem;
+                width: 85%;
+                line-height: 3.3rem;
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            a {
+                border-radius: 25px;
+                padding: 15px 40px;
+                background-color: whitesmoke;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                
+                img {
+                    
+                    width: 25px;
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        .img-a {
+            width: 100%;
+            max-height: 700px;
+            clip-path: polygon(58% 43%, 82% 29%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 32% 100%, 0 100%, 0 52%, 30% 51%) !important;
+        }
+    }
+
+    .inicio-p::before {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.411) 0%, transparent 70%);
+        transform: translate(-50%, 1%);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* --------------- */
+
+    /* --------------------SECCIONES----------------- */
+    .secciones {
+
+        /* ----------------BENEFICIOS--------------- */
+        .app {
+            font-family: 'Barlow', sans-serif;
+            margin: 60px 50px 0px 7%;
+            text-align: center;
+
+
+            .beneficio {
+                color: #01305c;
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #01305c;
+                margin-bottom: 70px;
+                line-height: 1.1;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                .imagen-celu {
+                    width: 100%;
+                    border-radius: 25px;
+                    margin-bottom: 10%;
+                }
+
+                ul {
+                    padding-bottom: 50px;
+                    li {
+                        display: flex;
+                        list-style: none;
+                        margin-top: 20px;
+
+                        img {
+                            width: 40px;
+                        }
+
+                        p {
+                            width: 100%;
+                            text-align: start;
+                            color: #4B4B4C;
+                            margin: 15px;
+                        }
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+
+                    li {
+                        display: flex;
+                        list-style: none;
+                        margin-top: 20px;
+
+                        img {
+                            width: 40px;
+                        }
+
+                        p {
+                            width: 100%;
+                            text-align: start;
+                            color: #4B4B4C;
+                            margin: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        /* ----------------- */
+
+        /* ----------------ENTRENAMIENTO---------------- */
+        .entrenamientos {
+            font-family: 'Barlow', sans-serif;
+
+            .grey-zone-dos,
+            .grey-zone-uno {
+
+                background-color: #F5F4F8;
+                text-align: center;
+                padding: 60px 50px 20px 7%;
+
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: #01305c;
+                    margin-bottom: 70px;
+                    line-height: 1.1;
+                }
+            }
+
+            .grey-zone-uno {
+                p {
+                    color: #01305c;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .grey-zone-dos {
+                transform: translateY(-277px);
+
+
+                .imagen-icono-pesa {
+                    width: 60px;
+                    margin-bottom: 40px;
+                }
+
+                h2 {
+                    font-size: 2.2rem;
+                    font-weight: bolder;
+                }
+
+                p {
+                    color: #013d75;
+                    margin-top: 50px;
+                    font-size: 1.3rem;
+                }
+            }
+
+
+
+            .fondo {
+                width: 100%;
+                height: 1000px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        /* --------------------------------- */
+
+        /* ------------EQUIPOS------------- */
+        .equipos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-150px);
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #01305c;
+                width: 60%;
+                margin: auto;
+                text-align: center;
+            }
+
+            p {
+
+                color: #01305c;
+                font-size: 1.1rem;
+            }
+
+            .card-entrenamiento {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .imagen-celu {
+                    width: 90%;
+                    border-radius: 25px;
+                    margin: 10% auto;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+
+                    li {
+                        display: flex;
+                        list-style: none;
+                        margin-top: 20px;
+
+                        img {
+                            width: 40px;
+                        }
+
+                        p {
+                            width: 100%;
+                            text-align: start;
+                            color: #4B4B4C;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ----------------- */
+    }
+
+    /* --------------- */
+}
+
+/* --------------- */
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004e98 !important;
+    padding: 20px 30px !important;
+    font-family: 'Barlow', sans-serif;
+
+    img {
+        width: 80px !important;
+    }
+
+    h2 {
+        color: white !important;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    div {
+        ul {
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+
+            li {
+                margin-right: 10px;
+
+                img {
+                    width: 40px !important;
+                }
+            }
+        }
+    }
+}
