@@ -7,14 +7,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: white !important;
-}
-
 /* ------------------HEADER-------------------- */
 .navv {
   display: flex;
-  padding: 0px 25px;
+  padding: 10px 25px;
 }
 .navv .cont {
   display: flex;
@@ -73,19 +69,14 @@ body .inicio-p {
   flex-direction: column;
   font-family: "Barlow", sans-serif;
   background-color: #004e98;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 body .inicio-p div {
   margin-left: 20px;
-  position: absolute;
-  z-index: 9999;
-  top: 130px;
 }
-body .inicio-p div h1 {
+body .inicio-p div .titulo {
   font-weight: 700;
   font-size: 3rem;
-  width: 85%;
-  line-height: 3.3rem;
   color: white;
   margin-bottom: 30px;
 }
@@ -98,13 +89,14 @@ body .inicio-p div a {
   font-weight: 600;
 }
 body .inicio-p div a img {
-  width: 25px;
+  width: 30px;
+  height: 30px;
   margin-right: 7px;
 }
 body .inicio-p .img-a {
   width: 100%;
   max-height: 700px;
-  clip-path: polygon(58% 43%, 82% 29%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 32% 100%, 0 100%, 0 52%, 30% 51%) !important;
+  clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%) !important;
 }
 body .inicio-p::before {
   content: "";
@@ -232,17 +224,16 @@ body .secciones .entrenamientos .fondo {
 }
 body .secciones .equipos {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   transform: translateY(-150px);
 }
 body .secciones .equipos h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #01305c;
-  width: 60%;
-  margin: auto;
+  width: 85%;
   text-align: center;
 }
 body .secciones .equipos p {
@@ -289,8 +280,9 @@ footer {
   padding: 20px 30px !important;
   font-family: "Barlow", sans-serif;
 }
-footer img {
-  width: 80px !important;
+footer .loggo {
+  width: 80px;
+  height: 80px;
 }
 footer h2 {
   color: white !important;
@@ -307,7 +299,8 @@ footer div ul li {
   margin-right: 10px;
 }
 footer div ul li img {
-  width: 40px !important;
+  width: 40px;
+  height: 40px;
 }
 
 @media (min-width: 600px) {
@@ -316,12 +309,16 @@ footer div ul li img {
     /* --------------- */
     /* ------------EQUIPOS------------- */
   }
-  body .inicio-p h1 {
-    font-size: 4rem !important;
-    line-height: 70px !important;
+  body .inicio-p {
+    padding-top: 70px;
   }
-  body .inicio-p div {
-    margin-top: 100px;
+  body .inicio-p div .titulo {
+    font-size: 4.5rem;
+    line-height: 70px;
+    margin-bottom: 50px;
+  }
+  body .inicio-p div a {
+    font-size: 28px;
   }
   body .equipos ul {
     margin-left: 20px;

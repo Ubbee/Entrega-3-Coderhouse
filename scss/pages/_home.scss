@@ -1,7 +1,12 @@
+//VARIABLES
+@use "../abstracts/variables";
+//MIXINS
+@use "../abstracts/mixin";
+
 /* ------------------HEADER-------------------- */
 .navv {
     display: flex;
-    padding: 0px 25px;
+    padding: 10px 25px;
 
     .cont {
         display: flex;
@@ -23,6 +28,7 @@
         ul {
             margin-left: 20PX !important;
 
+
             li {
                 padding: 10px;
                 border-radius: 10px;
@@ -32,7 +38,7 @@
                     font-family: 'Barlow', sans-serif;
                     font-weight: 700;
                     background-color: #64a8f1;
-                    color: #004e98 !important;
+                    color: variables.$color-principal !important;
                     text-decoration: none;
                     padding: 15px 30px;
                     border-radius: 30px;
@@ -45,7 +51,7 @@
                 background-color: #64a8f1;
 
                 a:hover {
-                    color: #004e98 !important;
+                    color: variables.$color-principal !important;
                 }
             }
         }
@@ -74,19 +80,15 @@ body {
         display: flex;
         flex-direction: column;
         font-family: 'Barlow', sans-serif;
-        background-color: #004e98;
-        padding-top: 100px;
-        
+        background-color: variables.$color-principal;
+        padding-top: 40px;
+
         div {
             margin-left: 20px;
-            position: absolute;
-            z-index: 9999;
-            top: 130px;
-            h1 {
+
+            .titulo {
                 font-weight: 700;
                 font-size: 3rem;
-                width: 85%;
-                line-height: 3.3rem;
                 color: white;
                 margin-bottom: 30px;
             }
@@ -98,10 +100,9 @@ body {
                 text-decoration: none;
                 font-size: 18px;
                 font-weight: 600;
-                
+
                 img {
-                    
-                    width: 25px;
+                    @include mixin.medidas(30px, 30px);
                     margin-right: 7px;
                 }
             }
@@ -110,7 +111,7 @@ body {
         .img-a {
             width: 100%;
             max-height: 700px;
-            clip-path: polygon(58% 43%, 82% 29%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 32% 100%, 0 100%, 0 52%, 30% 51%) !important;
+            clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%) !important;
         }
     }
 
@@ -164,6 +165,7 @@ body {
 
                 ul {
                     padding-bottom: 50px;
+
                     li {
                         display: flex;
                         list-style: none;
@@ -272,18 +274,15 @@ body {
 
         /* ------------EQUIPOS------------- */
         .equipos {
-            display: flex;
+            @include mixin.flex-center;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             transform: translateY(-150px);
 
             h2 {
                 font-size: 3rem;
                 font-weight: 700;
                 color: #01305c;
-                width: 60%;
-                margin: auto;
+                width: 85%;
                 text-align: center;
             }
 
@@ -342,12 +341,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004e98 !important;
+    background-color: variables.$color-principal !important;
     padding: 20px 30px !important;
     font-family: 'Barlow', sans-serif;
 
-    img {
-        width: 80px !important;
+    .loggo {
+        @include mixin.medidas(80px, 80px);
     }
 
     h2 {
@@ -367,7 +366,7 @@ footer {
                 margin-right: 10px;
 
                 img {
-                    width: 40px !important;
+                    @include mixin.medidas(40px, 40px);
                 }
             }
         }

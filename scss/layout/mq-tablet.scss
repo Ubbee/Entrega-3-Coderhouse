@@ -3,15 +3,19 @@
 
         /* ------------------INICIO----------------- */
         .inicio-p {
-            h1{
-                font-size: 4rem !important;
-                line-height: 70px !important;
-            }
-            a{
-                
-            }
+            padding-top: 70px;
             div {
-                margin-top: 100px;
+                .titulo {
+                    font-size: 4.5rem;
+                    line-height: 70px;
+                    margin-bottom: 50px;
+                }
+
+                a {
+                    font-size: 28px;
+                }
+
+                
             }
 
         }
