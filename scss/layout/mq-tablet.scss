@@ -1,36 +1,108 @@
+//MIXINS
+@use "../abstracts/mixin";
 @media (min-width: 600px) {
     body {
+        main {
 
-        /* ------------------INICIO----------------- */
-        .inicio-p {
-            padding-top: 70px;
-            div {
-                .titulo {
-                    font-size: 4.5rem;
-                    line-height: 70px;
-                    margin-bottom: 50px;
+            /* ------------------INICIO----------------- */
+            .inicio-p {
+                padding-top: 70px;
+
+                div {
+                    .titulo {
+                        font-size: 4.5rem;
+                        width: 90%;
+                        line-height: 70px;
+                        margin-bottom: 50px;
+                    }
+
+                    a {
+                        font-size: 25px;
+                    }
+
+
                 }
 
-                a {
-                    font-size: 28px;
-                }
-
-                
             }
 
-        }
+            /* --------------- */
+            /* --------------- */
+            /* --------------- */
 
-        /* --------------- */
-        /* ------------EQUIPOS------------- */
-        .equipos {
+            .secciones {
 
-            ul {
-                margin-left: 20px;
-                transform: translateY(-40px);
 
-                li {
-                    p {
-                        font-size: 1.3rem;
+
+                /* ------------BENEFICIOS------------- */
+                .app {
+                    .beneficio {
+                        font-size: 1.4rem;
+                    }
+
+                    div {
+                        flex-direction: row;
+
+                        .imagen-celu {
+                            width: 60%;
+                        }
+
+                        ul {
+                            width: 50%;
+
+                            li {
+                                img {
+                                    @include mixin.medidas(43px, 43px);
+                                }
+
+                                p {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /* --------------- */
+                /* --------------- */
+                /* --------------- */
+
+                /* ------------ENTRENAMIENTO------------- */
+                .entrenamientos {
+                    .grey-zone-uno {
+                        .entrenamiento {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .grey-zone-dos {
+                        transform: translateY(0px);
+                        p{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                /* --------------- */
+                /* --------------- */
+                /* --------------- */
+                /* ------------EQUIPOS------------- */
+                .equipos {
+                    transform: translateY(0px);
+                    padding-top: 100px;
+
+                    .entrenamiento {
+                        font-size: 1.4rem;
+                    }
+
+                    ul {
+                        margin-left: 20px;
+                        transform: translateY(-40px);
+
+                        li {
+                            p {
+                                font-size: 1.3rem;
+                            }
+                        }
                     }
                 }
             }

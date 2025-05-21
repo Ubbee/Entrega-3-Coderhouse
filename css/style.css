@@ -59,28 +59,31 @@
 /* -------------------- */
 /* -------------------CUERPO------------------ */
 body {
+  /* --------------- */
+}
+body main {
   /* ------------------INICIO----------------- */
   /* --------------- */
   /* --------------------SECCIONES----------------- */
   /* --------------- */
 }
-body .inicio-p {
+body main .inicio-p {
   display: flex;
   flex-direction: column;
   font-family: "Barlow", sans-serif;
   background-color: #004e98;
   padding-top: 40px;
 }
-body .inicio-p div {
+body main .inicio-p div {
   margin-left: 20px;
 }
-body .inicio-p div .titulo {
+body main .inicio-p div .titulo {
   font-weight: 700;
   font-size: 3rem;
   color: white;
   margin-bottom: 30px;
 }
-body .inicio-p div a {
+body main .inicio-p div a {
   border-radius: 25px;
   padding: 15px 40px;
   background-color: whitesmoke;
@@ -88,17 +91,17 @@ body .inicio-p div a {
   font-size: 18px;
   font-weight: 600;
 }
-body .inicio-p div a img {
+body main .inicio-p div a img {
   width: 30px;
   height: 30px;
   margin-right: 7px;
 }
-body .inicio-p .img-a {
+body main .inicio-p .img-a {
   width: 100%;
   max-height: 700px;
   clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%) !important;
 }
-body .inicio-p::before {
+body main .inicio-p::before {
   content: "";
   position: absolute;
   top: 30%;
@@ -110,7 +113,7 @@ body .inicio-p::before {
   pointer-events: none;
   z-index: 0;
 }
-body .secciones {
+body main .secciones {
   /* ----------------BENEFICIOS--------------- */
   /* ----------------- */
   /* ----------------ENTRENAMIENTO---------------- */
@@ -118,159 +121,164 @@ body .secciones {
   /* ------------EQUIPOS------------- */
   /* ----------------- */
 }
-body .secciones .app {
+body main .secciones .app {
   font-family: "Barlow", sans-serif;
   margin: 60px 50px 0px 7%;
   text-align: center;
 }
-body .secciones .app .beneficio {
+body main .secciones .app .beneficio {
   color: #01305c;
   font-size: 1.1rem;
 }
-body .secciones .app h2 {
+body main .secciones .app h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #01305c;
   margin-bottom: 70px;
   line-height: 1.1;
 }
-body .secciones .app div {
+body main .secciones .app div {
   display: flex;
   flex-direction: column;
 }
-body .secciones .app div .imagen-celu {
+body main .secciones .app div .imagen-celu {
   width: 100%;
   border-radius: 25px;
   margin-bottom: 10%;
 }
-body .secciones .app div ul {
+body main .secciones .app div ul {
   padding-bottom: 50px;
 }
-body .secciones .app div ul li {
+body main .secciones .app div ul li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin-top: 20px;
 }
-body .secciones .app div ul li img {
-  width: 40px;
+body main .secciones .app div ul li img {
+  width: 35px;
+  height: 35px;
 }
-body .secciones .app div ul li p {
-  width: 100%;
+body main .secciones .app div ul li p {
   text-align: start;
   color: #4B4B4C;
   margin: 15px;
 }
-body .secciones .app div ul {
+body main .secciones .app div ul {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
-body .secciones .app div ul li {
+body main .secciones .app div ul li {
   display: flex;
   list-style: none;
   margin-top: 20px;
 }
-body .secciones .app div ul li img {
+body main .secciones .app div ul li img {
   width: 40px;
 }
-body .secciones .app div ul li p {
+body main .secciones .app div ul li p {
   width: 100%;
   text-align: start;
   color: #4B4B4C;
   margin: 10px;
 }
-body .secciones .entrenamientos {
+body main .secciones .entrenamientos {
   font-family: "Barlow", sans-serif;
 }
-body .secciones .entrenamientos .grey-zone-dos,
-body .secciones .entrenamientos .grey-zone-uno {
+body main .secciones .entrenamientos .grey-zone-dos,
+body main .secciones .entrenamientos .grey-zone-uno {
   background-color: #F5F4F8;
   text-align: center;
   padding: 60px 50px 20px 7%;
 }
-body .secciones .entrenamientos .grey-zone-dos h2,
-body .secciones .entrenamientos .grey-zone-uno h2 {
+body main .secciones .entrenamientos .grey-zone-dos h2,
+body main .secciones .entrenamientos .grey-zone-uno h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #01305c;
   margin-bottom: 70px;
   line-height: 1.1;
 }
-body .secciones .entrenamientos .grey-zone-uno p {
+body main .secciones .entrenamientos .grey-zone-uno p {
   color: #01305c;
   font-size: 1.1rem;
 }
-body .secciones .entrenamientos .grey-zone-dos {
+body main .secciones .entrenamientos .grey-zone-dos {
   transform: translateY(-277px);
 }
-body .secciones .entrenamientos .grey-zone-dos .imagen-icono-pesa {
+body main .secciones .entrenamientos .grey-zone-dos .imagen-icono-pesa {
   width: 60px;
   margin-bottom: 40px;
 }
-body .secciones .entrenamientos .grey-zone-dos h2 {
+body main .secciones .entrenamientos .grey-zone-dos h2 {
   font-size: 2.2rem;
   font-weight: bolder;
 }
-body .secciones .entrenamientos .grey-zone-dos p {
+body main .secciones .entrenamientos .grey-zone-dos p {
   color: #013d75;
   margin-top: 50px;
   font-size: 1.3rem;
 }
-body .secciones .entrenamientos .fondo {
+body main .secciones .entrenamientos .fondo {
   width: 100%;
   height: 1000px;
   object-fit: cover;
   object-position: center;
 }
-body .secciones .equipos {
+body main .secciones .equipos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transform: translateY(-150px);
 }
-body .secciones .equipos h2 {
+body main .secciones .equipos h2 {
   font-size: 3rem;
   font-weight: 700;
   color: #01305c;
   width: 85%;
   text-align: center;
 }
-body .secciones .equipos p {
+body main .secciones .equipos p {
   color: #01305c;
   font-size: 1.1rem;
 }
-body .secciones .equipos .card-entrenamiento {
+body main .secciones .equipos .card-entrenamiento {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .secciones .equipos .card-entrenamiento .imagen-celu {
+body main .secciones .equipos .card-entrenamiento .imagen-celu {
   width: 90%;
   border-radius: 25px;
   margin: 10% auto;
 }
-body .secciones .equipos .card-entrenamiento ul {
+body main .secciones .equipos .card-entrenamiento ul {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
-body .secciones .equipos .card-entrenamiento ul li {
+body main .secciones .equipos .card-entrenamiento ul li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin-top: 20px;
 }
-body .secciones .equipos .card-entrenamiento ul li img {
-  width: 40px;
+body main .secciones .equipos .card-entrenamiento ul li img {
+  width: 45px;
+  height: 45px;
 }
-body .secciones .equipos .card-entrenamiento ul li p {
+body main .secciones .equipos .card-entrenamiento ul li p {
+  font-size: 1.4rem;
   width: 100%;
   text-align: start;
   color: #4B4B4C;
   margin: 10px;
 }
 
-/* --------------- */
 /* FOOTER */
 footer {
   display: flex;
@@ -304,27 +312,75 @@ footer div ul li img {
 }
 
 @media (min-width: 600px) {
-  body {
+  body main {
     /* ------------------INICIO----------------- */
     /* --------------- */
-    /* ------------EQUIPOS------------- */
+    /* --------------- */
+    /* --------------- */
   }
-  body .inicio-p {
+  body main .inicio-p {
     padding-top: 70px;
   }
-  body .inicio-p div .titulo {
+  body main .inicio-p div .titulo {
     font-size: 4.5rem;
+    width: 90%;
     line-height: 70px;
     margin-bottom: 50px;
   }
-  body .inicio-p div a {
-    font-size: 28px;
+  body main .inicio-p div a {
+    font-size: 25px;
   }
-  body .equipos ul {
+  body main .secciones {
+    /* ------------BENEFICIOS------------- */
+    /* --------------- */
+    /* --------------- */
+    /* --------------- */
+    /* ------------ENTRENAMIENTO------------- */
+    /* --------------- */
+    /* --------------- */
+    /* --------------- */
+    /* ------------EQUIPOS------------- */
+  }
+  body main .secciones .app .beneficio {
+    font-size: 1.4rem;
+  }
+  body main .secciones .app div {
+    flex-direction: row;
+  }
+  body main .secciones .app div .imagen-celu {
+    width: 60%;
+  }
+  body main .secciones .app div ul {
+    width: 50%;
+  }
+  body main .secciones .app div ul li img {
+    width: 43px;
+    height: 43px;
+  }
+  body main .secciones .app div ul li p {
+    font-size: 1.2rem;
+  }
+  body main .secciones .entrenamientos .grey-zone-uno .entrenamiento {
+    font-size: 1.4rem;
+  }
+  body main .secciones .entrenamientos .grey-zone-dos {
+    transform: translateY(0px);
+  }
+  body main .secciones .entrenamientos .grey-zone-dos p {
+    font-size: 1.4rem;
+  }
+  body main .secciones .equipos {
+    transform: translateY(0px);
+    padding-top: 100px;
+  }
+  body main .secciones .equipos .entrenamiento {
+    font-size: 1.4rem;
+  }
+  body main .secciones .equipos ul {
     margin-left: 20px;
     transform: translateY(-40px);
   }
-  body .equipos ul li p {
+  body main .secciones .equipos ul li p {
     font-size: 1.3rem;
   }
 }
