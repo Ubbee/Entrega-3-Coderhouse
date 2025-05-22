@@ -2,6 +2,23 @@
 @use "../abstracts/mixin";
 @media (min-width: 600px) {
     body {
+
+        header {
+            .navv {
+                .cont {
+                    .img-ul {
+                        ul{
+                            li{
+                                a{
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         main {
 
             /* ------------------INICIO----------------- */
@@ -120,8 +137,12 @@
                     }
 
                     .card-entrenamiento {
+                        .imagen-fit {
+                            width: 80%;
+                        }
+
                         ul {
-                            margin-left: 20px;
+                            margin-left: 7%;
                             transform: translateY(-40px);
 
                             li {

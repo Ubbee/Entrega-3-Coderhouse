@@ -1,13 +1,47 @@
+//VARIABLES
+@use "../abstracts/variables";
 //MIXINS
 @use "../abstracts/mixin";
-@media (min-width: 1024px) {
-    .btn-uno {
-        display: block !important;
-    }
+@media (min-width: 990px) {
+    header {
+        .navv {
+            #navbarContenido {
+                position: initial;
+                background-color: white;
+                box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+            }
 
-    .btn-dos {
-        display: none !important;
+            .cont {
+                .btn-uno {
+                    display: block;
+                    background-color: #01325f;
+                    padding: 15px 30px;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 700;
+                }
+
+                .img-ul {
+                    ul {
+                        li {
+                            a{
+                                color: variables.$color-principal;
+                            }
+                            .btn-dos {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+@media (min-width: 1024px) {
+
+
 
     body {
         main {
@@ -144,6 +178,7 @@
                             justify-content: center;
                             transform: translateY(0px);
                             margin-right: 50px;
+
                             li {
                                 img {
                                     @include mixin.medidas(31px, 31px);
@@ -151,6 +186,7 @@
                             }
                         }
                     }
+
                     padding-bottom: 100px;
                 }
 

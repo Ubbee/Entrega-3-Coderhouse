@@ -12,6 +12,20 @@
   display: flex;
   padding: 10px 25px;
 }
+.navv #navbarContenido {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgba(0, 78, 152, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  width: max-content;
+  padding: 10px 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 .navv .cont {
   display: flex;
   justify-content: space-between;
@@ -34,11 +48,12 @@
   margin-left: 10px;
   transition: 0.3s;
 }
+.navv .img-ul ul li a {
+  color: whitesmoke;
+}
 .navv .img-ul ul li .boton-contacto-uno {
   font-family: "Barlow", sans-serif;
-  font-weight: 700;
   background-color: #64a8f1;
-  color: #004e98 !important;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 30px;
@@ -314,6 +329,9 @@ footer div ul li img {
   body {
     /* FOOTER */
   }
+  body header .navv .cont .img-ul ul li a {
+    font-size: 1.3rem;
+  }
   body main {
     /* ------------------INICIO----------------- */
     /* --------------- */
@@ -393,8 +411,11 @@ footer div ul li img {
   body main .secciones .equipos p {
     font-size: 1rem;
   }
+  body main .secciones .equipos .card-entrenamiento .imagen-fit {
+    width: 80%;
+  }
   body main .secciones .equipos .card-entrenamiento ul {
-    margin-left: 20px;
+    margin-left: 7%;
     transform: translateY(-40px);
   }
   body main .secciones .equipos .card-entrenamiento ul li img {
@@ -408,13 +429,29 @@ footer div ul li img {
     font-size: 1rem;
   }
 }
+@media (min-width: 990px) {
+  header .navv #navbarContenido {
+    position: initial;
+    background-color: white;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  }
+  header .navv .cont .btn-uno {
+    display: block;
+    background-color: #01325f;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  header .navv .cont .img-ul ul li a {
+    color: #004e98;
+  }
+  header .navv .cont .img-ul ul li .btn-dos {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
-  .btn-uno {
-    display: block !important;
-  }
-  .btn-dos {
-    display: none !important;
-  }
   body main {
     /* ------------------INICIO----------------- */
     /* --------------- */
