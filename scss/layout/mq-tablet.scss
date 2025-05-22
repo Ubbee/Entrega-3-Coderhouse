@@ -17,7 +17,7 @@
                     }
 
                     a {
-                        font-size: 25px;
+                        font-size: 1.2rem;
                     }
 
 
@@ -36,7 +36,11 @@
                 /* ------------BENEFICIOS------------- */
                 .app {
                     .beneficio {
-                        font-size: 1.4rem;
+                        font-size: 1rem;
+                    }
+
+                    h2 {
+                        font-size: 3rem;
                     }
 
                     div {
@@ -51,11 +55,11 @@
 
                             li {
                                 img {
-                                    @include mixin.medidas(43px, 43px);
+                                    @include mixin.medidas(38px, 38px);
                                 }
 
                                 p {
-                                    font-size: 1.2rem;
+                                    font-size: 1.1rem;
                                 }
                             }
                         }
@@ -68,17 +72,34 @@
 
                 /* ------------ENTRENAMIENTO------------- */
                 .entrenamientos {
+
+
+
+
                     .grey-zone-uno {
                         .entrenamiento {
-                            font-size: 1.4rem;
+                            font-size: 1rem;
+                        }
+
+                        h2 {
+                            font-size: 3rem;
                         }
                     }
 
                     .grey-zone-dos {
                         transform: translateY(0px);
-                        p{
-                            font-size: 1.4rem;
+
+                        p {
+                            font-size: 1.1rem;
                         }
+
+                        h2 {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .fondo {
+                        height: 450px;
                     }
                 }
 
@@ -90,22 +111,40 @@
                     transform: translateY(0px);
                     padding-top: 100px;
 
-                    .entrenamiento {
-                        font-size: 1.4rem;
+                    h2 {
+                        font-size: 3rem;
                     }
 
-                    ul {
-                        margin-left: 20px;
-                        transform: translateY(-40px);
+                    p {
+                        font-size: 1rem;
+                    }
 
-                        li {
-                            p {
-                                font-size: 1.3rem;
+                    .card-entrenamiento {
+                        ul {
+                            margin-left: 20px;
+                            transform: translateY(-40px);
+
+                            li {
+                                img {
+                                    @include mixin.medidas(31px, 31px);
+                                }
+
+                                p {
+                                    font-size: 1.1rem;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+
+        /* FOOTER */
+        footer {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+
     }
 }

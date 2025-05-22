@@ -148,7 +148,7 @@ body {
                 }
 
                 h2 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 700;
                     color: #01305c;
                     margin-bottom: 70px;
@@ -180,7 +180,7 @@ body {
                             p {
                                 text-align: start;
                                 color: #4B4B4C;
-                                margin: 15px;
+                                margin: 1.1rem;
                             }
                         }
                     }
@@ -225,7 +225,7 @@ body {
                     padding: 60px 50px 20px 7%;
 
                     h2 {
-                        font-size: 3rem;
+                        font-size: 2rem;
                         font-weight: 700;
                         color: #01305c;
                         margin-bottom: 70px;
@@ -234,7 +234,7 @@ body {
                 }
 
                 .grey-zone-uno {
-                    p {
+                    .entrenamiento {
                         color: #01305c;
                         font-size: 1.1rem;
                     }
@@ -250,14 +250,14 @@ body {
                     }
 
                     h2 {
-                        font-size: 2.2rem;
+                        font-size: 2rem;
                         font-weight: bolder;
                     }
 
                     p {
                         color: #013d75;
                         margin-top: 50px;
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                     }
                 }
 
@@ -280,15 +280,13 @@ body {
                 transform: translateY(-150px);
 
                 h2 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 700;
                     color: #01305c;
-                    width: 85%;
                     text-align: center;
                 }
 
                 p {
-
                     color: #01305c;
                     font-size: 1.1rem;
                 }
@@ -298,7 +296,7 @@ body {
                     flex-direction: column;
                     justify-content: center;
 
-                    .imagen-celu {
+                    .imagen-fit {
                         width: 90%;
                         border-radius: 25px;
                         margin: 10% auto;
@@ -315,11 +313,11 @@ body {
                             margin-top: 20px;
 
                             img {
-                                @include mixin.medidas(45px, 45px);
+                                @include mixin.medidas(40px, 40px);
                             }
 
                             p {
-                                font-size: 1.4rem;
+                                font-size: 1.1rem;
                                 width: 100%;
                                 text-align: start;
                                 color: #4B4B4C;
@@ -353,8 +351,8 @@ footer {
     }
 
     h2 {
-        color: white !important;
-        font-size: 1.5rem;
+        color: white;
+        font-size: 1rem;
         font-weight: 600;
         text-align: center;
     }
