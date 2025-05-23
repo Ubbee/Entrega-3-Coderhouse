@@ -38,13 +38,16 @@
     .img-ul {
         display: flex;
         flex-direction: column;
+
         ul {
             margin-left: 20PX !important;
+
             li {
                 padding: 10px;
                 border-radius: 10px;
                 margin-left: 10px;
-                a{
+
+                a {
                     color: whitesmoke;
                 }
 
@@ -82,7 +85,8 @@
 
 }
 
-/* -------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
 
 /* -------------------CUERPO------------------ */
 body {
@@ -142,7 +146,9 @@ body {
             z-index: 0;
         }
 
-        /* --------------- */
+        /* ---------------------------------------------- */
+        /* ---------------------------------------------- */
+        /* ---------------------------------------------- */
 
         /* --------------------SECCIONES----------------- */
         .secciones {
@@ -223,7 +229,8 @@ body {
                 }
             }
 
-            /* ----------------- */
+            /* ---------------------------------------------- */
+            /* ---------------------------------------------- */
 
             /* ----------------ENTRENAMIENTO---------------- */
             .entrenamientos {
@@ -283,7 +290,8 @@ body {
                 }
             }
 
-            /* --------------------------------- */
+            /* ---------------------------------------------- */
+            /* ---------------------------------------------- */
 
             /* ------------EQUIPOS------------- */
             .equipos {
@@ -340,16 +348,15 @@ body {
                 }
             }
 
-            /* ----------------- */
+
         }
-
-        /* --------------- */
     }
-
-    /* --------------- */
 }
 
-/* FOOTER */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* -----------------------FOOTER----------------------- */
 footer {
     display: flex;
     justify-content: space-between;
@@ -385,3 +392,70 @@ footer {
         }
     }
 }
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* ----------------------HTML-MEMBRESIA----------------------- */
+.nosotros {
+    background: linear-gradient(to bottom, #07417a, #052c56);
+
+    .tit-nos {
+        font-family: 'Barlow', sans-serif;
+        text-align: center;
+        padding-top: 100px;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .contenedor {
+
+        @include mixin.flex-center;
+        padding: 0px 10px 100px 10px;
+        font-family: 'Inter', sans-serif;
+        flex-wrap: wrap;
+
+        .textos {
+            span {
+                color: variables.$color-principal;
+                font-weight: bold;
+            }
+        }
+
+        form {
+            h2{
+                font-size: 1.1rem;
+                text-align: center;
+                margin-bottom: 25px;
+                color: #292929;
+            }
+            button{
+                background-color: variables.$color-principal;
+                border: 0px;
+            }
+            button:hover{
+                background-color: #1c7be0;
+            }
+            margin-top: 50px;
+            align-self: flex-start;
+        }
+
+        .textos,
+        form {
+            background-color: whitesmoke;
+            width: 80%;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+        }
+    }
+}
+.foot{
+    background: linear-gradient(to bottom, #052c56 , #07417a);
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */

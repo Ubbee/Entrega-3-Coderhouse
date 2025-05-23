@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MZAG</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>MetaBody</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white navv">
 
             <div class="container-fluid cont">
-                <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                <a href="./index.html"><img src="../img/logo-blue.png" alt="logo"></a>
 
                 <div class="img-ul">
 
@@ -40,7 +40,7 @@
                                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item item-tres">
-                                <a class="nav-link boton-contacto-uno  btn-dos" href="#">Contactanos</a>
+                                <a class="nav-link boton-contacto-uno  btn-dos" href="./nosotros.html">Contactanos</a>
                             </li>
                         </ul>
                     </div>
@@ -50,32 +50,65 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="nosotros">
         <h1 class="tit-nos">N O S O T R O S</h1>
-        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus quibusdam sit praesentium
-            distinctio
-            dolore nesciunt sapiente quas veritatis quo consectetur, sequi facilis voluptatum temporibus explicabo
-            obcaecati. Dolor, tempora labore?
-            Quisquam minima libero nihil. Earum laboriosam numquam tempora fuga eaque, nulla vero repellendus
-            exercitationem
-            rerum laudantium, pariatur iste atque? Saepe perferendis distinctio placeat tenetur aliquam corrupti quaerat
-            impedit quas voluptate!
-            Dolores vel quo quos ab minus eos veritatis provident optio nesciunt ad sit nemo facilis obcaecati vero ea
-            enim
-            totam quaerat aliquid dignissimos, quibusdam atque inventore assumenda eveniet. Aspernatur, nemo?
-            Aperiam corporis eveniet adipisci dolorem repellat, accusantium eaque? Ullam accusamus dolores non, amet
-            asperiores magni, a exercitationem nemo pariatur modi nam ipsa, omnis impedit quasi eius sequi voluptas
-            porro
-            harum?</P>
+        <section class="contenedor">
+
+            <div class="textos">
+                <p>
+                    En <span>MetaBody</span> entendemos el entrenamiento como lo que es: disciplina, progreso y
+                    resultados.
+                    Desde que abrimos en 2025, nos enfocamos en ofrecer algo concreto: un lugar bien equipado, con
+                    entrenadores
+                    que saben lo que hacen, y una metodología clara para mejorar.
+                </p>
+                <p>
+                    Nuestro objetivo no es venderte una idea irreal de “transformación en 30 días”, sino darte las
+                    herramientas
+                    para que vos construyas tu mejor versión, paso a paso, sin vueltas.
+                </p>
+                <p>
+                    Contamos con áreas de musculación, funcional, cardio y entrenamiento personalizado.
+                    Actualizamos nuestro equipamiento constantemente y mantenemos un ambiente serio, limpio
+                    y enfocado en lo que importa: el rendimiento.
+                </p>
+                <p>
+                    Acá no vas a encontrar slogans vacíos. Vas a encontrar barras, discos, racks, sogas, mancuernas
+                    y gente entrenando en serio. Gente que sabe que mejorar lleva tiempo. Que no busca excusas. Gente
+                    como vos.
+                </p>
+                <p>
+                    Si estás buscando un gimnasio que te tome en serio, te esperamos. <br> <span>Entrená fuerte, entrená bien.</span>
+                </p>
+            </div>
+            <form>
+                <h2>Dejanos tus datos y nos contactaremos con vos!</h2>
+                <div class="mb-3 mail">
+                    <label for="exampleInputPassword1" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ej: Fulano Fernandez">
+                </div>
+                <div class="mb-3 mail">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Ejemplo@gmail.com">
+                </div>
+                <div class="mb-3 msj">
+                    <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4"
+                        placeholder="Escribí tu mensaje acá..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
     </main>
-    <footer>
-        <img src="./img/logo.png" alt="logo">
+    <footer class="foot">
+        <img class="loggo" src="../img/logo-black.png" alt="logo">
         <h2>Todos los derechos reservados</h2>
         <div>
             <ul>
-                <li><img src="./img/wsp.png" alt="imagen whatsapp"></li>
-                <li><img src="./img/x.png" alt="imagen x"></li>
-                <li><img src="./img/ig.png" alt="imagen instagram"></li>
+                <li><img src="../img/wsp.png" alt="imagen whatsapp"></li>
+                <li><img src="../img/x.png" alt="imagen x"></li>
+                <li><img src="../img/ig.png" alt="imagen instagram"></li>
             </ul>
         </div>
     </footer>
