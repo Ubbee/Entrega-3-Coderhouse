@@ -103,7 +103,7 @@
                         margin-left: 100px;
 
                         .imagen-celu {
-                            @include mixin.medidas(40%, 40%);
+                            @include mixin.medidas(37%, 37%);
                             margin-right: 10%;
                             margin-bottom: 0%;
                         }
@@ -167,6 +167,7 @@
 
                 /* ------------EQUIPOS------------- */
                 .equipos {
+                    font-family: 'Barlow', sans-serif;
                     h2 {
                         width: 60%;
                     }
@@ -180,7 +181,7 @@
                         margin-top: 60px;
 
                         .imagen-fit {
-                            width: 50%;
+                            width: 45%;
                             margin: 0%;
                         }
 
@@ -205,13 +206,38 @@
             /* ---------------------------------------------- */
         }
     }
+
+    footer {
+        div {
+            ul {
+                flex-direction: row;
+            }
+        }
+    }
+
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+
+    /* ---------------------NOSOTROS------------------------- */
+
+    .nosotros {
+        .contenedor {
+            padding: 50px 10% 100px 10%;
+            flex-wrap: nowrap;
+            .textos,
+            form {
+                align-self: flex-start;
+                width: 50%;
+                margin: 0px 30px;
+            }
+
+        }
+    }
+
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
 }
 
 /* ----------------------FOOTER------------------------ */
-footer {
-    div {
-        ul {
-            flex-direction: row;
-        }
-    }
-}

@@ -300,8 +300,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #004e98 !important;
-  padding: 20px 30px !important;
+  background-color: #004e98;
+  padding: 20px 30px;
   font-family: "Barlow", sans-serif;
 }
 footer .loggo {
@@ -325,34 +325,45 @@ footer div ul li {
 footer div ul li img {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease;
+}
+footer div ul li img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
-/* ----------------------HTML-MEMBRESIA----------------------- */
+/* ----------------------HTML-NOSOTROS----------------------- */
 .nosotros {
-  background: linear-gradient(to bottom, #07417a, #052c56);
+  background-color: #004e98;
 }
 .nosotros .tit-nos {
   font-family: "Barlow", sans-serif;
   text-align: center;
   padding-top: 100px;
-  color: white;
+  color: #ebebeb;
   margin-bottom: 50px;
+  font-size: 2.3rem;
 }
 .nosotros .contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 10px 100px 10px;
+  padding: 50px 10px 100px 10px;
   font-family: "Inter", sans-serif;
   flex-wrap: wrap;
+  background-color: #ebebeb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .nosotros .contenedor .textos span {
   color: #004e98;
   font-weight: bold;
+}
+.nosotros .contenedor .textos p {
+  color: #4B4B4C;
 }
 .nosotros .contenedor form {
   margin-top: 50px;
@@ -362,14 +373,20 @@ footer div ul li img {
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 25px;
-  color: #292929;
+  color: #4B4B4C;
+}
+.nosotros .contenedor form label {
+  font-weight: 600;
+  color: #4B4B4C;
 }
 .nosotros .contenedor form button {
-  background-color: #004e98;
-  border: 0px;
+  background-color: #ff6700;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 .nosotros .contenedor form button:hover {
-  background-color: #1c7be0;
+  background-color: #e65a00;
+  transform: translateY(1px);
 }
 .nosotros .contenedor .textos,
 .nosotros .contenedor form {
@@ -377,13 +394,45 @@ footer div ul li img {
   width: 80%;
   padding: 40px;
   border-radius: 25px;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
 }
 
-.foot {
-  background: linear-gradient(to bottom, #052c56, #07417a);
+.ubicacion {
+  background-color: #ebebeb;
+  padding: 2rem 1rem 6rem 1rem;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+.ubicacion h2 {
+  color: #003b72;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.ubicacion .mapa-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+.ubicacion .mapa-container iframe {
+  border-radius: 25px;
+  width: 100%;
+  height: 400px;
+  border: 0;
 }
 
+/* Colores base 
+:root {
+  --naranja: #ff6700;
+  --casi-blanco: #ebebeb;
+  --gris-claro: #c0c0c0;
+  --gris-letra: #4B4B4C;
+  --azul-marino: #3a6ea5;
+  --azul: #004e98;
+  --blanco: #ffffff;
+}
+*/
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
@@ -396,6 +445,9 @@ footer div ul li img {
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
     /* ---------------------FOOTER------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
   }
   body header .navv .cont .img-ul ul li a {
     font-size: 1.3rem;
@@ -490,6 +542,9 @@ footer div ul li img {
   body main .secciones .equipos .card-entrenamiento ul li p {
     font-size: 1.1rem;
   }
+  body .ubicacion {
+    padding: 2rem 2rem;
+  }
   body footer h2 {
     font-size: 1rem;
   }
@@ -573,8 +628,8 @@ footer div ul li img {
     margin-left: 100px;
   }
   body main .secciones .app div .imagen-celu {
-    width: 40%;
-    height: 40%;
+    width: 37%;
+    height: 37%;
     margin-right: 10%;
     margin-bottom: 0%;
   }
@@ -613,6 +668,7 @@ footer div ul li img {
     display: block;
   }
   body main .secciones .equipos {
+    font-family: "Barlow", sans-serif;
     padding-bottom: 100px;
   }
   body main .secciones .equipos h2 {
@@ -626,7 +682,7 @@ footer div ul li img {
     margin-top: 60px;
   }
   body main .secciones .equipos .card-entrenamiento .imagen-fit {
-    width: 50%;
+    width: 45%;
     margin: 0%;
   }
   body main .secciones .equipos .card-entrenamiento ul {
@@ -638,10 +694,27 @@ footer div ul li img {
     width: 31px;
     height: 31px;
   }
+  footer div ul {
+    flex-direction: row;
+  }
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
+  /* ---------------------NOSOTROS------------------------- */
+  .nosotros .contenedor {
+    padding: 50px 10% 100px 10%;
+    flex-wrap: nowrap;
+  }
+  .nosotros .contenedor .textos,
+  .nosotros .contenedor form {
+    align-self: flex-start;
+    width: 50%;
+    margin: 0px 30px;
+  }
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
 }
 /* ----------------------FOOTER------------------------ */
-footer div ul {
-  flex-direction: row;
-}
 
 /*# sourceMappingURL=style.css.map */
