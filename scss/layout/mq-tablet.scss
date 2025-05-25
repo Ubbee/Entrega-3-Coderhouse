@@ -66,13 +66,13 @@
 
                     div {
                         flex-direction: row;
-
+                        align-items: center;
                         .imagen-celu {
                             width: 60%;
                         }
 
                         ul {
-                            width: 50%;
+                            width: 100%;
 
                             li {
                                 img {

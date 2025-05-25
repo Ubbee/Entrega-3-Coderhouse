@@ -168,13 +168,13 @@
                 /* ------------EQUIPOS------------- */
                 .equipos {
                     font-family: 'Barlow', sans-serif;
-                    h2 {
-                        width: 60%;
-                    }
+
 
                     p {
                         font-size: 1.1rem;
                     }
+
+
 
                     .card-entrenamiento {
                         flex-direction: row;
@@ -225,6 +225,7 @@
         .contenedor {
             padding: 50px 10% 100px 10%;
             flex-wrap: nowrap;
+
             .textos,
             form {
                 align-self: flex-start;
@@ -238,6 +239,33 @@
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
-}
 
-/* ----------------------FOOTER------------------------ */
+    /* ----------------------MEMBRESIA------------------------ */
+    body {
+        .contenedor {
+            .grid-container {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+
+                /*
+            .item-uno {
+                grid-column: 1fr;
+            }
+
+            .item-dos {
+                grid-column: 1fr;
+            }
+
+            .item-tres {
+                grid-column: 1fr;
+            }
+                */
+            }
+
+        }
+    }
+
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+}

@@ -109,6 +109,7 @@ body {
                     font-size: 3rem;
                     color: white;
                     margin-bottom: 30px;
+                    padding: 0px 5% 0px 0px;
                 }
 
                 a {
@@ -175,6 +176,7 @@ body {
 
                 div {
                     display: flex;
+                    justify-content: center;
                     flex-direction: column;
 
                     .imagen-celu {
@@ -249,6 +251,7 @@ body {
                         color: #01305c;
                         margin-bottom: 70px;
                         line-height: 1.1;
+                        padding: 0px 5%;
                     }
                 }
 
@@ -298,12 +301,15 @@ body {
                 @include mixin.flex-center;
                 flex-direction: column;
                 transform: translateY(-150px);
+                font-family: 'Barlow', sans-serif;
 
                 h2 {
                     font-size: 2rem;
                     font-weight: 700;
                     color: #01305c;
                     text-align: center;
+                    padding: 0px 10%;
+
                 }
 
                 p {
@@ -386,8 +392,9 @@ footer {
                 margin-right: 10px;
 
                 img {
-                    @include mixin.medidas(40px, 40px);
+                    @include mixin.medidas(35px, 35px);
                     transition: transform 0.3s ease;
+                    margin-top: 5px;
                 }
 
                 img:hover {
@@ -408,7 +415,7 @@ footer {
 .nosotros {
     background-color: variables.$color-principal;
 
-    .tit-nos {
+    .tit {
         font-family: 'Barlow', sans-serif;
         text-align: center;
         padding-top: 100px;
@@ -437,16 +444,19 @@ footer {
         }
 
         form {
+
             h2 {
+
                 font-size: 1.1rem;
                 text-align: center;
                 margin-bottom: 25px;
-                color: #4B4B4C;
+                font-weight: 600;
+                color: variables.$color-principal;
             }
 
             label {
                 font-weight: 600;
-                color: #4B4B4C;
+                color: #1f2a42;
             }
 
             button {
@@ -496,6 +506,7 @@ footer {
         background: #fff;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         margin-top: 60px;
+
         iframe {
             border-radius: 25px;
             width: 100%;
@@ -516,6 +527,91 @@ footer {
   --blanco: #ffffff;
 }
 */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* ----------------------HTML-MEMBRESIA----------------------- */
+
+body {
+    .contenedor {
+        background-color: variables.$color-principal;
+
+        .tit-m {
+            font-family: 'Barlow', sans-serif;
+            text-align: center;
+            padding: 100px 0px 60px;
+            color: #ebebeb;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+
+        }
+
+        .grid-container {
+            font-family: 'Barlow', sans-serif;
+            background-color: #EBEBEB;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 5% 10%;
+            gap: 20px;
+
+            .item {
+                @include mixin.flex-center;
+                flex-direction: column;
+                border: 1px solid #c4c4c5;
+                border-radius: 10px;
+                padding: 25px;
+                font-weight: 600;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+                h2 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-weight: 600;
+                    color: variables.$color-principal;
+                }
+
+                ul {
+                    li {
+                        font-family: 'Barlow', sans-serif;
+                        font-weight: 100;
+                        list-style: none;
+                        color: #4B4B4C;
+                        font-size: 1rem;
+                        margin-top: 5px;
+                    }
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #c4c4c5;
+                }
+
+                a {
+                    background-color: #ff6700;
+                    padding: 10px 25px;
+                    color: whitesmoke;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    transition: 0.3s ease;
+                }
+
+                a:hover {
+                    background-color: #e65a00;
+                    transform: translateY(1px);
+                }
+
+                
+            }
+
+
+
+        }
+    }
+}
+
+/* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */

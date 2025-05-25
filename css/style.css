@@ -96,6 +96,7 @@ body main .inicio-p div .titulo {
   font-size: 3rem;
   color: white;
   margin-bottom: 30px;
+  padding: 0px 5% 0px 0px;
 }
 body main .inicio-p div a {
   border-radius: 25px;
@@ -154,6 +155,7 @@ body main .secciones .app h2 {
 }
 body main .secciones .app div {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 body main .secciones .app div .imagen-celu {
@@ -215,6 +217,7 @@ body main .secciones .entrenamientos .grey-zone-uno h2 {
   color: #01305c;
   margin-bottom: 70px;
   line-height: 1.1;
+  padding: 0px 5%;
 }
 body main .secciones .entrenamientos .grey-zone-uno .entrenamiento {
   color: #01305c;
@@ -248,12 +251,14 @@ body main .secciones .equipos {
   align-items: center;
   flex-direction: column;
   transform: translateY(-150px);
+  font-family: "Barlow", sans-serif;
 }
 body main .secciones .equipos h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #01305c;
   text-align: center;
+  padding: 0px 10%;
 }
 body main .secciones .equipos p {
   color: #01305c;
@@ -323,9 +328,10 @@ footer div ul li {
   margin-right: 10px;
 }
 footer div ul li img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   transition: transform 0.3s ease;
+  margin-top: 5px;
 }
 footer div ul li img:hover {
   transform: scale(1.15);
@@ -340,7 +346,7 @@ footer div ul li img:hover {
 .nosotros {
   background-color: #004e98;
 }
-.nosotros .tit-nos {
+.nosotros .tit {
   font-family: "Barlow", sans-serif;
   text-align: center;
   padding-top: 100px;
@@ -373,11 +379,12 @@ footer div ul li img:hover {
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 25px;
-  color: #4B4B4C;
+  font-weight: 600;
+  color: #004e98;
 }
 .nosotros .contenedor form label {
   font-weight: 600;
-  color: #4B4B4C;
+  color: #1f2a42;
 }
 .nosotros .contenedor form button {
   background-color: #ff6700;
@@ -436,6 +443,75 @@ footer div ul li img:hover {
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ----------------------HTML-MEMBRESIA----------------------- */
+body .contenedor {
+  background-color: #004e98;
+}
+body .contenedor .tit-m {
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  padding: 100px 0px 60px;
+  color: #ebebeb;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+body .contenedor .grid-container {
+  font-family: "Barlow", sans-serif;
+  background-color: #EBEBEB;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 5% 10%;
+  gap: 20px;
+}
+body .contenedor .grid-container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #c4c4c5;
+  border-radius: 10px;
+  padding: 25px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+body .contenedor .grid-container .item h2 {
+  font-size: 2.2rem;
+}
+body .contenedor .grid-container .item p {
+  font-weight: 600;
+  color: #004e98;
+}
+body .contenedor .grid-container .item ul {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c5;
+}
+body .contenedor .grid-container .item ul li {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  list-style: none;
+  color: #4B4B4C;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+body .contenedor .grid-container .item a {
+  background-color: #ff6700;
+  padding: 10px 25px;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+body .contenedor .grid-container .item a:hover {
+  background-color: #e65a00;
+  transform: translateY(1px);
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
 @media (min-width: 600px) {
   body {
     /* ------------------HEADER-------------------- */
@@ -486,12 +562,13 @@ footer div ul li img:hover {
   }
   body main .secciones .app div {
     flex-direction: row;
+    align-items: center;
   }
   body main .secciones .app div .imagen-celu {
     width: 60%;
   }
   body main .secciones .app div ul {
-    width: 50%;
+    width: 100%;
   }
   body main .secciones .app div ul li img {
     width: 38px;
@@ -671,9 +748,6 @@ footer div ul li img:hover {
     font-family: "Barlow", sans-serif;
     padding-bottom: 100px;
   }
-  body main .secciones .equipos h2 {
-    width: 60%;
-  }
   body main .secciones .equipos p {
     font-size: 1.1rem;
   }
@@ -714,7 +788,27 @@ footer div ul li img:hover {
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */
+  /* ----------------------MEMBRESIA------------------------ */
+  body .contenedor .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /*
+    .item-uno {
+        grid-column: 1fr;
+    }
+
+    .item-dos {
+        grid-column: 1fr;
+    }
+
+    .item-tres {
+        grid-column: 1fr;
+    }
+        */
+  }
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
 }
-/* ----------------------FOOTER------------------------ */
 
 /*# sourceMappingURL=style.css.map */
