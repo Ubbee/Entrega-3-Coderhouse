@@ -246,7 +246,10 @@
             .grid-container {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
-
+                padding: 5% 10%;
+                .item{
+                    padding: 30px;
+                }
                 /*
             .item-uno {
                 grid-column: 1fr;

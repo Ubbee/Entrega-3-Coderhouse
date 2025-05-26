@@ -471,10 +471,17 @@ body .contenedor .grid-container .item {
   align-items: center;
   flex-direction: column;
   border: 1px solid #c4c4c5;
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 16px;
+  padding: 20px;
   font-weight: 600;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+body .contenedor .grid-container .item .mem-tit {
+  display: flex;
+}
+body .contenedor .grid-container .item .mem-tit img {
+  width: 45px;
+  height: 45px;
 }
 body .contenedor .grid-container .item h2 {
   font-size: 2.2rem;
@@ -495,6 +502,9 @@ body .contenedor .grid-container .item ul li {
   font-size: 1rem;
   margin-top: 5px;
 }
+body .contenedor .grid-container .item ul li s {
+  color: #999;
+}
 body .contenedor .grid-container .item a {
   background-color: #ff6700;
   padding: 10px 25px;
@@ -506,6 +516,30 @@ body .contenedor .grid-container .item a {
 body .contenedor .grid-container .item a:hover {
   background-color: #e65a00;
   transform: translateY(1px);
+}
+body .contenedor .grid-container .item-dos {
+  background: linear-gradient(135deg, #ffb266, #ff944d);
+  transform: scale(1.03);
+  border: 2px solid #ff7a00;
+  position: relative;
+  z-index: 2;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+body .contenedor .grid-container .item-dos .badge {
+  background-color: white;
+  color: #ff7a00;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+body .contenedor .grid-container .item-dos ul li {
+  color: white;
 }
 
 /* ---------------------------------------------- */
@@ -521,6 +555,10 @@ body .contenedor .grid-container .item a:hover {
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
     /* ---------------------FOOTER------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ----------------------MEMBRESIA------------------------ */
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
@@ -624,6 +662,9 @@ body .contenedor .grid-container .item a:hover {
   }
   body footer h2 {
     font-size: 1rem;
+  }
+  body .contenedor .grid-container {
+    padding: 5% 20%;
   }
 }
 @media (min-width: 990px) {
@@ -792,6 +833,7 @@ body .contenedor .grid-container .item a:hover {
   body .contenedor .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    padding: 5% 10%;
     /*
     .item-uno {
         grid-column: 1fr;
@@ -805,6 +847,9 @@ body .contenedor .grid-container .item a:hover {
         grid-column: 1fr;
     }
         */
+  }
+  body .contenedor .grid-container .item {
+    padding: 30px;
   }
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */
