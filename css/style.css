@@ -46,13 +46,13 @@
   padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
+  font-family: "Poppins", sans-serif;
   transition: 0.3s;
 }
 .navv .img-ul ul li a {
   color: whitesmoke;
 }
 .navv .img-ul ul li .boton-contacto-uno {
-  font-family: "Barlow", sans-serif;
   background-color: #64a8f1;
   text-decoration: none;
   padding: 15px 30px;
@@ -66,9 +66,11 @@
 }
 .navv .btn-uno {
   display: none;
+  font-family: "Poppins", sans-serif;
 }
 .navv .btn-dos {
   display: block;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---------------------------------------------- */
@@ -84,7 +86,7 @@ body main {
 body main .inicio-p {
   display: flex;
   flex-direction: column;
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #004e98;
   padding-top: 40px;
 }
@@ -110,6 +112,11 @@ body main .inicio-p div a img {
   width: 30px;
   height: 30px;
   margin-right: 7px;
+}
+body main .inicio-p div p {
+  margin: 20px 0px 0px 10px;
+  color: whitesmoke;
+  font-size: 0.9rem;
 }
 body main .inicio-p .img-a {
   width: 100%;
@@ -138,7 +145,7 @@ body main .secciones {
   /* ------------EQUIPOS------------- */
 }
 body main .secciones .app {
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 60px 50px 0px 7%;
   text-align: center;
 }
@@ -201,11 +208,9 @@ body main .secciones .app div ul li p {
   color: #4B4B4C;
   margin: 10px;
 }
-body main .secciones .entrenamientos {
-  font-family: "Barlow", sans-serif;
-}
 body main .secciones .entrenamientos .grey-zone-dos,
 body main .secciones .entrenamientos .grey-zone-uno {
+  font-family: "Poppins", sans-serif;
   background-color: #F5F4F8;
   text-align: center;
   padding: 60px 50px 20px 7%;
@@ -213,7 +218,7 @@ body main .secciones .entrenamientos .grey-zone-uno {
 body main .secciones .entrenamientos .grey-zone-dos h2,
 body main .secciones .entrenamientos .grey-zone-uno h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #01305c;
   margin-bottom: 70px;
   line-height: 1.1;
@@ -251,14 +256,14 @@ body main .secciones .equipos {
   align-items: center;
   flex-direction: column;
   transform: translateY(-150px);
-  font-family: "Barlow", sans-serif;
 }
 body main .secciones .equipos h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #01305c;
   text-align: center;
   padding: 0px 10%;
+  font-family: "Poppins", sans-serif;
 }
 body main .secciones .equipos p {
   color: #01305c;
@@ -285,6 +290,7 @@ body main .secciones .equipos .card-entrenamiento ul li {
   align-items: center;
   list-style: none;
   margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 body main .secciones .equipos .card-entrenamiento ul li img {
   width: 40px;
@@ -307,7 +313,7 @@ footer {
   align-items: center;
   background-color: #004e98;
   padding: 20px 30px;
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 footer .loggo {
   width: 80px;
@@ -347,7 +353,7 @@ footer div ul li img:hover {
   background-color: #004e98;
 }
 .nosotros .tit {
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   padding-top: 100px;
   color: #ebebeb;
@@ -359,7 +365,7 @@ footer div ul li img:hover {
   justify-content: center;
   align-items: center;
   padding: 50px 10px 100px 10px;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   flex-wrap: wrap;
   background-color: #ebebeb;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -408,7 +414,7 @@ footer div ul li img:hover {
   background-color: #ebebeb;
   padding: 2rem 1rem 6rem 1rem;
   text-align: center;
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .ubicacion h2 {
   color: #003b72;
@@ -449,7 +455,7 @@ body .contenedor {
   background-color: #004e98;
 }
 body .contenedor .tit-m {
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   padding: 100px 0px 60px;
   color: #ebebeb;
@@ -457,7 +463,6 @@ body .contenedor .tit-m {
   font-size: 2.5rem;
 }
 body .contenedor .grid-container {
-  font-family: "Barlow", sans-serif;
   background-color: #EBEBEB;
   display: grid;
   grid-template-columns: 1fr;
@@ -472,9 +477,10 @@ body .contenedor .grid-container .item {
   flex-direction: column;
   border: 1px solid #c4c4c5;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
   font-weight: 600;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
 }
 body .contenedor .grid-container .item .mem-tit {
   display: flex;
@@ -495,11 +501,11 @@ body .contenedor .grid-container .item ul {
   border-bottom: 1px solid #c4c4c5;
 }
 body .contenedor .grid-container .item ul li {
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   list-style: none;
   color: #4B4B4C;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 5px;
 }
 body .contenedor .grid-container .item ul li s {

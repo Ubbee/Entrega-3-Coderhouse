@@ -46,13 +46,13 @@
                 padding: 10px;
                 border-radius: 10px;
                 margin-left: 10px;
+                font-family: "Poppins", sans-serif;
 
                 a {
                     color: whitesmoke;
                 }
 
                 .boton-contacto-uno {
-                    font-family: 'Barlow', sans-serif;
                     background-color: #64a8f1;
                     text-decoration: none;
                     padding: 15px 30px;
@@ -76,10 +76,12 @@
 
     .btn-uno {
         display: none;
+        font-family: "Poppins", sans-serif;
     }
 
     .btn-dos {
         display: block;
+        font-family: "Poppins", sans-serif;
     }
 
 
@@ -97,7 +99,7 @@ body {
         .inicio-p {
             display: flex;
             flex-direction: column;
-            font-family: 'Barlow', sans-serif;
+            font-family: "Poppins", sans-serif;
             background-color: variables.$color-principal;
             padding-top: 40px;
 
@@ -124,6 +126,11 @@ body {
                         @include mixin.medidas(30px, 30px);
                         margin-right: 7px;
                     }
+                }
+                p{
+                    margin: 20px 0px 0px 10px;
+                    color: whitesmoke;
+                    font-size: 0.9rem;
                 }
             }
 
@@ -156,7 +163,7 @@ body {
 
             /* ----------------BENEFICIOS--------------- */
             .app {
-                font-family: 'Barlow', sans-serif;
+                font-family: "Poppins", sans-serif;
                 margin: 60px 50px 0px 7%;
                 text-align: center;
 
@@ -236,18 +243,17 @@ body {
 
             /* ----------------ENTRENAMIENTO---------------- */
             .entrenamientos {
-                font-family: 'Barlow', sans-serif;
 
                 .grey-zone-dos,
                 .grey-zone-uno {
-
+                    font-family: "Poppins", sans-serif;
                     background-color: #F5F4F8;
                     text-align: center;
                     padding: 60px 50px 20px 7%;
 
                     h2 {
                         font-size: 2rem;
-                        font-weight: 700;
+                        font-weight: 600;
                         color: #01305c;
                         margin-bottom: 70px;
                         line-height: 1.1;
@@ -301,15 +307,15 @@ body {
                 @include mixin.flex-center;
                 flex-direction: column;
                 transform: translateY(-150px);
-                font-family: 'Barlow', sans-serif;
+                
 
                 h2 {
                     font-size: 2rem;
-                    font-weight: 700;
+                    font-weight: 600;
                     color: #01305c;
                     text-align: center;
                     padding: 0px 10%;
-
+                    font-family: "Poppins", sans-serif;
                 }
 
                 p {
@@ -337,7 +343,7 @@ body {
                             @include mixin.flex-center;
                             list-style: none;
                             margin-top: 20px;
-
+                            font-family: "Poppins", sans-serif;
                             img {
                                 @include mixin.medidas(40px, 40px);
                             }
@@ -369,7 +375,7 @@ footer {
     align-items: center;
     background-color: variables.$color-principal ;
     padding: 20px 30px;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Poppins", sans-serif;
 
     .loggo {
         @include mixin.medidas(80px, 80px);
@@ -380,6 +386,7 @@ footer {
         font-size: 1rem;
         font-weight: 600;
         text-align: center;
+        
     }
 
     div {
@@ -416,7 +423,7 @@ footer {
     background-color: variables.$color-principal;
 
     .tit {
-        font-family: 'Barlow', sans-serif;
+        font-family: "Poppins", sans-serif;
         text-align: center;
         padding-top: 100px;
         color: #ebebeb;
@@ -427,7 +434,7 @@ footer {
     .contenedor {
         @include mixin.flex-center;
         padding: 50px 10px 100px 10px;
-        font-family: 'Inter', sans-serif;
+        font-family: "Poppins", sans-serif;
         flex-wrap: wrap;
         background-color: #ebebeb;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -492,7 +499,7 @@ footer {
     background-color: #ebebeb;
     padding: 2rem 1rem 6rem 1rem;
     text-align: center;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Poppins", sans-serif;
 
     h2 {
         color: #003b72;
@@ -539,7 +546,7 @@ body {
         background-color: variables.$color-principal;
 
         .tit-m {
-            font-family: 'Barlow', sans-serif;
+            font-family: "Poppins", sans-serif;
             text-align: center;
             padding: 100px 0px 60px;
             color: #ebebeb;
@@ -549,7 +556,6 @@ body {
         }
 
         .grid-container {
-            font-family: 'Barlow', sans-serif;
             background-color: #EBEBEB;
             display: grid;
             grid-template-columns: 1fr;
@@ -562,10 +568,10 @@ body {
                 flex-direction: column;
                 border: 1px solid #c4c4c5;
                 border-radius: 16px;
-                padding: 20px;
+                padding: 15px;
                 font-weight: 600;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
+                font-family: "Poppins", sans-serif;
                 .mem-tit {
                     display: flex;
 
@@ -587,11 +593,11 @@ body {
 
                 ul {
                     li {
-                        font-family: 'Barlow', sans-serif;
-                        font-weight: 100;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 400;
                         list-style: none;
                         color: #4B4B4C;
-                        font-size: 1rem;
+                        font-size: 0.9rem;
                         margin-top: 5px;
 
                         s {
@@ -647,7 +653,7 @@ body {
                         color: white;
 
                     }
-                }  
+                }
             }
 
         }
