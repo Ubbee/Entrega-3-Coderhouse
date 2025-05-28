@@ -43,7 +43,7 @@
             margin-left: 20PX !important;
 
             li {
-                padding: 10px;
+                padding: 0px 20px;
                 border-radius: 10px;
                 margin-left: 10px;
                 font-family: "Poppins", sans-serif;
@@ -205,7 +205,7 @@ body {
                             @include mixin.flex-center;
                             list-style: none;
                             margin-top: 20px;
-                            
+
 
                             img {
                                 @include mixin.medidas(35px, 35px);
@@ -272,7 +272,7 @@ body {
                     .entrenamiento {
                         color: #01305c;
                         font-size: 1.1rem;
-                        
+
                     }
                 }
 
@@ -430,19 +430,20 @@ footer {
     .tit {
         font-family: "Poppins", sans-serif;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
         color: #ebebeb;
         margin-bottom: 50px;
         font-size: 2.3rem;
     }
 
     .contenedor {
-        @include mixin.flex-center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         padding: 50px 5px 100px 5px;
         font-family: "Poppins", sans-serif;
-        flex-wrap: wrap;
+        gap: 30px;
         background-color: #ebebeb;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
         .textos {
             span {
@@ -458,7 +459,6 @@ footer {
         form {
 
             h2 {
-
                 font-size: 1.1rem;
                 text-align: center;
                 margin-bottom: 25px;
@@ -482,17 +482,42 @@ footer {
                 transform: translateY(1px);
             }
 
+        }
 
-
-            margin-top: 50px;
-            align-self: flex-start;
+        .redes {
+            h2 {
+                font-size: 1.4rem;
+                text-align: center;
+                margin-bottom: 25px;
+                font-weight: 600;
+                color: variables.$color-principal;
+            }
+            ul{
+                background-color: rgba(255,255,255,0.7);
+                @include mixin.flex-center;
+                list-style: none;
+                border: 1px solid #cce0ff;
+                padding: 20px 25px;
+                border-radius: 15px;
+                box-shadow: 5px 5px 10px 1px rgb(136, 136, 136);
+                box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
+                li{
+                    margin: 5px;
+                    img{
+                        @include mixin.medidas(48px, 48px);
+                    }
+                }
+            }
         }
 
 
         .textos,
-        form {
+        form,
+        .redes {
+            margin: 0 auto;
             background-color: whitesmoke;
             width: 80%;
+            height: auto;
             padding: 40px 35px;
             border-radius: 25px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
@@ -516,7 +541,7 @@ footer {
         max-width: 800px;
         margin: 0 auto;
         background: #ebebeb;
-        
+
         margin-top: 60px;
 
         iframe {
@@ -554,10 +579,9 @@ body {
         .tit-m {
             font-family: "Poppins", sans-serif;
             text-align: center;
-            padding: 100px 0px 60px;
+            padding: 50px 20px;
             color: #ebebeb;
-            margin-bottom: 50px;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
 
         }
 

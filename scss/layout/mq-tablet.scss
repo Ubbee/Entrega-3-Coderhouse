@@ -189,10 +189,32 @@
         /* ----------------------NOSOTROS------------------------ */
         .nosotros {
             .contenedor {
-                flex-wrap: nowrap;
-                padding: 0px 20px;
-                .textos, form{
-                    margin: 100px 15px;
+                grid-template-columns: 8fr 6fr;
+                grid-template-rows: repeat(3, auto);
+                padding: 50px 2rem 40px 2rem;
+                gap: 15px;
+
+                
+
+                .textos {
+                    grid-column: 1;
+                    grid-row:span 3;
+                }
+
+                form {
+                        h2{
+                            font-size: 1rem;
+                        }
+                    grid-column: 2;
+                }
+
+                .redes {
+                    grid-column: 2;
+                    grid-row:  2;
+                }
+
+                .textos, form, .redes{
+                    width: 100%;
                 }
             }
         }

@@ -42,7 +42,7 @@
   margin-left: 20PX !important;
 }
 .navv .img-ul ul li {
-  padding: 10px;
+  padding: 0px 20px;
   border-radius: 10px;
   margin-left: 10px;
   font-family: "Poppins", sans-serif;
@@ -355,20 +355,19 @@ footer div ul li img:hover {
 .nosotros .tit {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
   color: #ebebeb;
   margin-bottom: 50px;
   font-size: 2.3rem;
 }
 .nosotros .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   padding: 50px 5px 100px 5px;
   font-family: "Poppins", sans-serif;
-  flex-wrap: wrap;
+  gap: 30px;
   background-color: #ebebeb;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .nosotros .contenedor .textos span {
   color: #004e98;
@@ -376,10 +375,6 @@ footer div ul li img:hover {
 }
 .nosotros .contenedor .textos p {
   color: #4B4B4C;
-}
-.nosotros .contenedor form {
-  margin-top: 50px;
-  align-self: flex-start;
 }
 .nosotros .contenedor form h2 {
   font-size: 1.1rem;
@@ -401,10 +396,39 @@ footer div ul li img:hover {
   background-color: #e65a00;
   transform: translateY(1px);
 }
+.nosotros .contenedor .redes h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #004e98;
+}
+.nosotros .contenedor .redes ul {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 1px solid #cce0ff;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgb(136, 136, 136);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
+}
+.nosotros .contenedor .redes ul li {
+  margin: 5px;
+}
+.nosotros .contenedor .redes ul li img {
+  width: 48px;
+  height: 48px;
+}
 .nosotros .contenedor .textos,
-.nosotros .contenedor form {
+.nosotros .contenedor form,
+.nosotros .contenedor .redes {
+  margin: 0 auto;
   background-color: whitesmoke;
   width: 80%;
+  height: auto;
   padding: 40px 35px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
@@ -457,10 +481,9 @@ body .contenedor {
 body .contenedor .tit-m {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding: 100px 0px 60px;
+  padding: 50px 20px;
   color: #ebebeb;
-  margin-bottom: 50px;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 body .contenedor .grid-container {
   background-color: #EBEBEB;
@@ -678,11 +701,27 @@ body .contenedor .grid-container .item-dos ul li {
     font-size: 1rem;
   }
   body .nosotros .contenedor {
-    flex-wrap: nowrap;
-    padding: 0px 20px;
+    grid-template-columns: 8fr 6fr;
+    grid-template-rows: repeat(3, auto);
+    padding: 50px 2rem 40px 2rem;
+    gap: 15px;
   }
-  body .nosotros .contenedor .textos, body .nosotros .contenedor form {
-    margin: 100px 15px;
+  body .nosotros .contenedor .textos {
+    grid-column: 1;
+    grid-row: span 3;
+  }
+  body .nosotros .contenedor form {
+    grid-column: 2;
+  }
+  body .nosotros .contenedor form h2 {
+    font-size: 1rem;
+  }
+  body .nosotros .contenedor .redes {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  body .nosotros .contenedor .textos, body .nosotros .contenedor form, body .nosotros .contenedor .redes {
+    width: 100%;
   }
   body .contenedor .grid-container {
     padding: 5% 20%;
@@ -695,10 +734,13 @@ body .contenedor .grid-container .item-dos ul li {
     background-color: white;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
   }
+  header .navv .cont {
+    margin: 0px 20px;
+  }
   header .navv .cont .btn-uno {
     display: block;
     background-color: #01325f;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 25px;
     text-decoration: none;
     color: white;
@@ -707,7 +749,7 @@ body .contenedor .grid-container .item-dos ul li {
   header .navv .cont .img-ul ul li a {
     color: #004e98;
   }
-  header .navv .cont .img-ul ul li .btn-dos {
+  header .navv .cont .img-ul ul .btn-dos {
     display: none;
   }
 }
@@ -842,9 +884,7 @@ body .contenedor .grid-container .item-dos ul li {
   }
   body .nosotros .contenedor .textos,
   body .nosotros .contenedor form {
-    align-self: flex-start;
-    width: 50%;
-    margin: 0px 30px;
+    width: 100%;
   }
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */

@@ -15,10 +15,11 @@
             }
 
             .cont {
+                margin: 0px 20px;
                 .btn-uno {
                     display: block;
                     background-color: #01325f;
-                    padding: 15px 30px;
+                    padding: 10px 25px;
                     border-radius: 25px;
                     text-decoration: none;
                     color: white;
@@ -31,10 +32,10 @@
                             a {
                                 color: variables.$color-principal;
                             }
+                        }
 
-                            .btn-dos {
-                                display: none;
-                            }
+                        .btn-dos {
+                            display: none;
                         }
                     }
                 }
@@ -228,9 +229,13 @@
 
                 .textos,
                 form {
-                    align-self: flex-start;
-                    width: 50%;
-                    margin: 0px 30px;
+                    width: 100%;
+                }
+
+                .redes {
+                    ul {
+                        li {}
+                    }
                 }
 
             }
