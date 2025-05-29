@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -86,21 +86,21 @@
                         bien.</span>
                 </p>
             </div>
-            <form id="formulario">
+            <form id="formulario" >
                 <h2>Dejanos tus datos y nos contactaremos con vos!</h2>
-                <div class="mb-3 mail">
+                <div class="mb-3 ">
                     <label for="exampleInputPassword1" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" placeholder="Ej: Fulano Fernandez">
+                    <input type="text" name="nombre" id="nombre" required class="form-control" autocomplete="name" placeholder="Ej: Fulano Fernandez">
                 </div>
-                <div class="mb-3 mail">
+                <div class="mb-3 ">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input type="email" class="form-control" autocomplete="email" name="email" id="email" required aria-describedby="emailHelp"
                         placeholder="Ejemplo@gmail.com">
                 </div>
-                <div class="mb-3 msj">
+                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="mensaje" rows="4"
-                        placeholder="Escribí tu mensaje acá..."></textarea>
+                        placeholder="Escribí tu mensaje acá..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
@@ -128,7 +128,7 @@
         </div>
     </section>
     <footer class="foot">
-        <img class="loggo" src="../img/logo-black.png" alt="logo del gimnasio">
+        <img class="loggo" src="../img/logo-black.png" alt="logo del gimnasio" loading="lazy">
         <h2>Todos los derechos reservados</h2>
         <div>
             <ul>
