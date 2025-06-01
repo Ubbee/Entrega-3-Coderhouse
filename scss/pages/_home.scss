@@ -492,8 +492,9 @@ footer {
                 font-weight: 600;
                 color: variables.$color-principal;
             }
-            ul{
-                background-color: rgba(255,255,255,0.7);
+
+            ul {
+                background-color: rgba(255, 255, 255, 0.7);
                 @include mixin.flex-center;
                 list-style: none;
                 border: 1px solid #cce0ff;
@@ -501,9 +502,11 @@ footer {
                 border-radius: 15px;
                 box-shadow: 5px 5px 10px 1px rgb(136, 136, 136);
                 box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
-                li{
+
+                li {
                     margin: 5px;
-                    img{
+
+                    img {
                         @include mixin.medidas(48px, 48px);
                     }
                 }
@@ -521,6 +524,47 @@ footer {
             padding: 40px 35px;
             border-radius: 25px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+        }
+    }
+}
+
+.publicidad-fondo {
+    background-color: #EBEBEB;
+
+    .publi {
+        @include mixin.flex-center;
+        flex-direction: column;
+        background-image: linear-gradient(135deg, #004e98 0%, #3a6ea5 50%, #057ceb 100%);
+        padding: 30px 10px;
+        border-radius: 25px;
+        font-family: "Poppins", sans-serif;
+        font-style: italic;
+        margin: 0px 5%;
+        text-align: center;
+        h2 {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 800;
+            line-height: 25px;
+        }
+
+        h3 {
+            color: #FFE600;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 20px;
+        }
+
+        a {
+            padding: 15px 25px;
+            background-color: #FFFFFF;
+            color: variables.$color-principal;
+            font-weight: 600;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin-top: 20px;
+            font-style: normal;
+            text-decoration: none;
         }
     }
 }

@@ -434,6 +434,46 @@ footer div ul li img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
 }
 
+.publicidad-fondo {
+  background-color: #EBEBEB;
+}
+.publicidad-fondo .publi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(135deg, #004e98 0%, #3a6ea5 50%, #057ceb 100%);
+  padding: 30px 10px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  margin: 0px 5%;
+  text-align: center;
+}
+.publicidad-fondo .publi h2 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 25px;
+}
+.publicidad-fondo .publi h3 {
+  color: #FFE600;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 20px;
+}
+.publicidad-fondo .publi a {
+  padding: 15px 25px;
+  background-color: #FFFFFF;
+  color: #004e98;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-top: 20px;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .ubicacion {
   background-color: #ebebeb;
   padding: 2rem 2rem 6rem 2rem;
@@ -720,8 +760,25 @@ body .contenedor .grid-container .item-dos ul li {
     grid-column: 2;
     grid-row: 2;
   }
-  body .nosotros .contenedor .textos, body .nosotros .contenedor form, body .nosotros .contenedor .redes {
+  body .nosotros .contenedor .textos,
+  body .nosotros .contenedor form,
+  body .nosotros .contenedor .redes {
     width: 100%;
+  }
+  body .publicidad-fondo .publi {
+    background-image: linear-gradient(90deg, rgba(0, 56, 120, 0.9) 0%, rgba(70, 126, 179, 0.5) 49%, rgba(53, 102, 148, 0.9) 100%), url("../../img/entrenando-publi.jpg");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 30px 40px;
+  }
+  body .publicidad-fondo .publi h2 {
+    font-size: 2.3rem;
+    line-height: 35px;
+  }
+  body .publicidad-fondo .publi h3 {
+    font-size: 2.9rem;
+    line-height: 35px;
   }
   body .contenedor .grid-container {
     padding: 5% 20%;
@@ -886,6 +943,20 @@ body .contenedor .grid-container .item-dos ul li {
   body .nosotros .contenedor form {
     width: 100%;
   }
+  body .publicidad-fondo {
+    padding-bottom: 60px;
+  }
+  body .publicidad-fondo .publi {
+    margin: 0 10%;
+    padding: 50px 7%;
+  }
+  body .publicidad-fondo .publi h2 {
+    font-size: 2.7rem;
+  }
+  body .publicidad-fondo .publi h3 {
+    font-size: 4rem;
+    line-height: 60px;
+  }
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */
@@ -917,5 +988,3 @@ body .contenedor .grid-container .item-dos ul li {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-

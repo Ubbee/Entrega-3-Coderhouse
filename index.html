@@ -12,9 +12,13 @@
     <!-- FONT POPPINS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    </noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -71,7 +75,7 @@
         <section class="inicio-p">
             <div>
                 <h1 class="titulo">Empezá con nosotros hoy mismo!</h1>
-                <a href="./pages/nosotros.html"> <img src="./img/icon-mundo.png" alt="icono-mundo">Ubicación</a>
+                <a href="./pages/nosotros.html"> <img src="./img/icon-mundo.webp" alt="icono-mundo">Ubicación</a>
                 <p>Gimnasio N°1 de Argentina</p>
             </div>
             <img class="img-a" src="./img/gimnasio.webp" alt="imagen del gimnasio vacio">
@@ -91,19 +95,19 @@
                 <div data-aos="fade-up">
                     <img class="imagen-celu" loading="lazy" src="./img/celu.webp" alt="imagen de un celular">
                     <ul class="uull">
-                        <li><img loading="lazy" src="./img/icono-sin-contacto.png" alt="icono-contactless">
+                        <li><img loading="lazy" src="./img/icono-sin-contacto.webp" alt="icono-contactless">
                             <p>Registro contactless</p>
                         </li>
-                        <li><img loading="lazy" src="./img/icono-wifi.png" alt="icono wifi">
+                        <li><img loading="lazy" src="./img/icono-wifi.webp" alt="icono wifi">
                             <p>Wifi Gratuito</p>
                         </li>
-                        <li><img loading="lazy" src="./img/icono-bebida.png" alt="icono bebida">
+                        <li><img loading="lazy" src="./img/icono-bebida.webp" alt="icono bebida">
                             <p>Estacion de bebidas</p>
                         </li>
-                        <li><img loading="lazy" src="./img/icono-vestuario.png" alt="icono vestuario">
+                        <li><img loading="lazy" src="./img/icono-vestuario.webp" alt="icono vestuario">
                             <p>Vestuarios</p>
                         </li>
-                        <li><img loading="lazy" src="./img/icono-ducha.png" alt="icono duchas">
+                        <li><img loading="lazy" src="./img/icono-ducha.webp" alt="icono duchas">
                             <p>Duchas</p>
                         </li>
                     </ul>
@@ -120,7 +124,7 @@
                 <img loading="lazy" class="fondo" src="./img/entrena.webp"
                     alt="imagen de una persona entrenando en el gimnasio">
                 <div class="grey-zone-dos">
-                    <img loading="lazy" class="imagen-icono-pesa" src="./img/icono-pesa.png" alt="icono pesa">
+                    <img loading="lazy" class="imagen-icono-pesa" src="./img/icono-pesa.webp" alt="icono pesa">
                     <h2>Entrenamientos guiados gratuitos</h2>
                     <p>¿Buscas entrenamientos personalizados para obtener un mejor resultado? Nuestros profesores estan
                         listos para ayudarte!</p>
@@ -133,15 +137,15 @@
                 <p>NUESTROS EQUIPOS</p>
                 <h2>Cientos de equipos cardiovasculares y de fuerza</h2>
                 <div class="card-entrenamiento">
-                    <img loading="lazy" class="imagen-fit" src="./img/portada.png" alt="mujer entrenando">
+                    <img loading="lazy" class="imagen-fit" src="./img/portada.webp" alt="mujer entrenando">
                     <ul>
-                        <li><img loading="lazy" src="./img/icono-cardio.png" alt="icono cardio">
+                        <li><img loading="lazy" src="./img/icono-cardio.webp" alt="icono cardio">
                             <p>Equipo para ejercicios cardiovasculares</p>
                         </li>
-                        <li><img loading="lazy" src="./img/icono-press.png" alt="icono press">
+                        <li><img loading="lazy" src="./img/icono-press.webp" alt="icono press">
                             <p>Equipo de ejercicios de fuerza</p>
                         </li>
-                        <li><img loading="lazy" src="./img/icono-funcional.png" alt="icono funcional">
+                        <li><img loading="lazy" src="./img/icono-funcional.webp" alt="icono funcional">
                             <p>Funcional</p>
                         </li>
                     </ul>
@@ -161,11 +165,11 @@
         <h2>Todos los derechos reservados</h2>
         <div>
             <ul>
-                <li><a target="_blank" href="https://www.whatsapp.com"><img loading="lazy" src="./img/wsp.png"
+                <li><a target="_blank" href="https://www.whatsapp.com"><img loading="lazy" src="./img/wsp.webp"
                             alt="imagen whatsapp"></a></li>
-                <li><a target="_blank" href="https://x.com"><img loading="lazy" src="./img/x.png" alt="imagen x"></a>
+                <li><a target="_blank" href="https://x.com"><img loading="lazy" src="./img/x.webp" alt="imagen x"></a>
                 </li>
-                <li><a target="_blank" href="https://www.instagram.com"><img loading="lazy" src="./img/ig.png"
+                <li><a target="_blank" href="https://www.instagram.com"><img loading="lazy" src="./img/ig.webp"
                             alt="imagen instagram"></a></li>
             </ul>
         </div>
@@ -179,4 +183,3 @@
 </body>
 
 </html>
-
