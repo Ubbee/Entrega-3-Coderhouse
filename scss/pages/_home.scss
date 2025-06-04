@@ -5,6 +5,9 @@
 
 /* ------------------HEADER-------------------- */
 .navv {
+    display: flex;
+    padding: 10px 25px;
+
     #navbarContenido {
         position: absolute;
         top: 100%;
@@ -19,9 +22,6 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
-
-    display: flex;
-    padding: 10px 25px;
 
     .cont {
         display: flex;
@@ -72,8 +72,6 @@
         }
     }
 
-
-
     .btn-uno {
         display: none;
         font-family: "Poppins", sans-serif;
@@ -83,7 +81,6 @@
         display: block;
         font-family: "Poppins", sans-serif;
     }
-
 
 }
 
@@ -107,6 +104,7 @@ body {
                 margin-left: 20px;
 
                 .titulo {
+                    text-align: start;
                     font-weight: 700;
                     font-size: 3rem;
                     color: white;
@@ -436,6 +434,10 @@ footer {
         font-size: 2.3rem;
     }
 
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+
+    /* -----------------------GRID-CARDS----------------------- */
     .contenedor {
         display: grid;
         grid-template-columns: 1fr;
@@ -445,6 +447,9 @@ footer {
         gap: 30px;
         background-color: #ebebeb;
 
+        /* ---------------------------------------------- */
+
+        /* -----------------------TEXTO-NOSOTROS----------------------- */
         .textos {
             span {
                 color: variables.$color-principal;
@@ -456,6 +461,9 @@ footer {
             }
         }
 
+        /* ---------------------------------------------- */
+
+        /* -----------------------FORMULARIO----------------------- */
         form {
 
             h2 {
@@ -484,6 +492,9 @@ footer {
 
         }
 
+        /* ---------------------------------------------- */
+
+        /* -----------------------REDES----------------------- */
         .redes {
             h2 {
                 font-size: 1.4rem;
@@ -528,6 +539,10 @@ footer {
     }
 }
 
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* -----------------------TARJETA-MEMBRESIAS----------------------- */
 .publicidad-fondo {
     background-color: #EBEBEB;
 
@@ -541,6 +556,7 @@ footer {
         font-style: italic;
         margin: 0px 5%;
         text-align: center;
+
         h2 {
             color: white;
             font-size: 1.3rem;
@@ -569,16 +585,22 @@ footer {
     }
 }
 
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* -----------------------MAPA----------------------- */
 .ubicacion {
     background-color: #ebebeb;
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 5rem 2rem 6rem 2rem;
     text-align: center;
     font-family: "Poppins", sans-serif;
 
     h2 {
         color: #003b72;
         font-size: 2rem;
-        margin-bottom: 1.5rem;
+        border-bottom: 3px solid variables.$color-principal;
+        padding-bottom: 20px;
+
     }
 
     .mapa-container {
@@ -586,7 +608,7 @@ footer {
         margin: 0 auto;
         background: #ebebeb;
 
-        margin-top: 60px;
+        margin-top: 40px;
 
         iframe {
             border-radius: 25px;
@@ -608,11 +630,10 @@ footer {
   --azul: #004e98;
   --blanco: #ffffff;
 }
-*/
+   ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
-/* ---------------------------------------------- */
-/* ---------------------------------------------- */
+
 
 /* ----------------------HTML-MEMBRESIA----------------------- */
 
@@ -629,6 +650,9 @@ body {
 
         }
 
+        /* ---------------------------------------------- */
+
+        /* -----------------------GRID-CARDS-MEMBRESIAS----------------------- */
         .grid-container {
             background-color: #EBEBEB;
             display: grid;
@@ -736,6 +760,119 @@ body {
 }
 
 /* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* ----------------------HTML-COMPRA----------------------- */
+
+main {
+    .titulo {
+        background-color: variables.$color-principal;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 50px 20px;
+        color: #ebebeb;
+        font-size: 2.3rem;
+    }
+
+    .pago {
+        @include mixin.flex-center;
+        padding: 150px 0px;
+        font-family: "Poppins", sans-serif;
+        flex-direction: column-reverse;
+        /* ---------------------------------------------- */
+
+        /* -----------------------IMAGEN-BLUR----------------------- */
+        .fondo-pelado {
+            @include mixin.flex-center;
+            position: relative;
+            overflow: hidden;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            width: 90%;
+            height: 300px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: url("../../img/pelado-press.jpg") center/cover no-repeat;
+                filter: blur(3px);
+
+            }
+
+            h2 {
+                font-family: "Poppins", sans-serif;
+                margin-bottom: 100px;
+                position: relative;
+                color: white;
+                text-align: center;
+                font-size: 1.7rem;
+            }
+        }
+
+        /* ---------------------------------------------- */
+
+        /* -----------------------FORMULARIO-PAGO----------------------- */
+        .contenedor {
+            text-align: center;
+            background-color: white;
+            padding: 40px 50px;
+            width: 90%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+
+            .formulario-pago {
+                @include mixin.flex-center;
+                flex-direction: column;
+
+                .titular {
+                    width: 100%;
+                }
+
+                label {
+                    margin-top: 10px;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        border-radius: 5px;
+                        padding: 3px;
+                        border: 1px solid rgb(201, 201, 201);
+                    }
+                }
+
+                .fila {
+                    gap: 10px;
+                    display: flex;
+                    width: 100%;
+
+                    label {
+                        width: 50%;
+                    }
+                }
+            }
+
+            button {
+                margin-top: 25px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: variables.$color-principal;
+                border: 0px;
+                color: white;
+                transition: 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #0265c2;
+            }
+        }
+    }
+}
+
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */

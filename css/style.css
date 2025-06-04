@@ -93,6 +93,7 @@ body main .inicio-p div {
   margin-left: 20px;
 }
 body main .inicio-p div .titulo {
+  text-align: start;
   font-weight: 700;
   font-size: 3rem;
   color: white;
@@ -351,6 +352,9 @@ footer div ul li img:hover {
 /* ----------------------HTML-NOSOTROS----------------------- */
 .nosotros {
   background-color: #004e98;
+  /* ---------------------------------------------- */
+  /* ---------------------------------------------- */
+  /* -----------------------GRID-CARDS----------------------- */
 }
 .nosotros .tit {
   font-family: "Poppins", sans-serif;
@@ -368,6 +372,12 @@ footer div ul li img:hover {
   font-family: "Poppins", sans-serif;
   gap: 30px;
   background-color: #ebebeb;
+  /* ---------------------------------------------- */
+  /* -----------------------TEXTO-NOSOTROS----------------------- */
+  /* ---------------------------------------------- */
+  /* -----------------------FORMULARIO----------------------- */
+  /* ---------------------------------------------- */
+  /* -----------------------REDES----------------------- */
 }
 .nosotros .contenedor .textos span {
   color: #004e98;
@@ -434,6 +444,9 @@ footer div ul li img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
 }
 
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* -----------------------TARJETA-MEMBRESIAS----------------------- */
 .publicidad-fondo {
   background-color: #EBEBEB;
 }
@@ -474,22 +487,26 @@ footer div ul li img:hover {
   text-decoration: none;
 }
 
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* -----------------------MAPA----------------------- */
 .ubicacion {
   background-color: #ebebeb;
-  padding: 2rem 2rem 6rem 2rem;
+  padding: 5rem 2rem 6rem 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 .ubicacion h2 {
   color: #003b72;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #004e98;
+  padding-bottom: 20px;
 }
 .ubicacion .mapa-container {
   max-width: 800px;
   margin: 0 auto;
   background: #ebebeb;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .ubicacion .mapa-container iframe {
   border-radius: 25px;
@@ -509,14 +526,14 @@ footer div ul li img:hover {
   --azul: #004e98;
   --blanco: #ffffff;
 }
-*/
-/* ---------------------------------------------- */
-/* ---------------------------------------------- */
+   ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ----------------------HTML-MEMBRESIA----------------------- */
 body .contenedor {
   background-color: #004e98;
+  /* ---------------------------------------------- */
+  /* -----------------------GRID-CARDS-MEMBRESIAS----------------------- */
 }
 body .contenedor .tit-m {
   font-family: "Poppins", sans-serif;
@@ -615,6 +632,106 @@ body .contenedor .grid-container .item-dos ul li {
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
+/* ----------------------HTML-COMPRA----------------------- */
+main .titulo {
+  background-color: #004e98;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  color: #ebebeb;
+  font-size: 2.3rem;
+}
+main .pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0px;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column-reverse;
+  /* ---------------------------------------------- */
+  /* -----------------------IMAGEN-BLUR----------------------- */
+  /* ---------------------------------------------- */
+  /* -----------------------FORMULARIO-PAGO----------------------- */
+}
+main .pago .fondo-pelado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 90%;
+  height: 300px;
+}
+main .pago .fondo-pelado::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../../img/pelado-press.jpg") center/cover no-repeat;
+  filter: blur(3px);
+}
+main .pago .fondo-pelado h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 100px;
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 1.7rem;
+}
+main .pago .contenedor {
+  text-align: center;
+  background-color: white;
+  padding: 40px 50px;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+main .pago .contenedor .formulario-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .pago .contenedor .formulario-pago .titular {
+  width: 100%;
+}
+main .pago .contenedor .formulario-pago label {
+  margin-top: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+main .pago .contenedor .formulario-pago label input {
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid rgb(201, 201, 201);
+}
+main .pago .contenedor .formulario-pago .fila {
+  gap: 10px;
+  display: flex;
+  width: 100%;
+}
+main .pago .contenedor .formulario-pago .fila label {
+  width: 50%;
+}
+main .pago .contenedor button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #004e98;
+  border: 0px;
+  color: white;
+  transition: 0.3s ease;
+}
+main .pago .contenedor button:hover {
+  background-color: #0265c2;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
 @media (min-width: 600px) {
   body {
     /* ------------------HEADER-------------------- */
@@ -635,6 +752,7 @@ body .contenedor .grid-container .item-dos ul li {
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
     /* ---------------------------------------------- */
+    /* ----------------------HTML-COMPRA----------------------- */
   }
   body header .navv .cont .img-ul ul li a {
     font-size: 1.3rem;
@@ -734,9 +852,6 @@ body .contenedor .grid-container .item-dos ul li {
   body main .secciones .equipos .card-entrenamiento ul li p {
     font-size: 1.1rem;
   }
-  body .ubicacion {
-    padding: 2rem 2rem;
-  }
   body footer h2 {
     font-size: 1rem;
   }
@@ -780,8 +895,18 @@ body .contenedor .grid-container .item-dos ul li {
     font-size: 2.9rem;
     line-height: 35px;
   }
+  body .ubicacion h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
   body .contenedor .grid-container {
     padding: 5% 20%;
+  }
+  body main .pago .fondo-pelado {
+    width: 60%;
+  }
+  body main .pago .contenedor {
+    width: 60%;
   }
 }
 @media (min-width: 990px) {
@@ -936,6 +1061,16 @@ body .contenedor .grid-container .item-dos ul li {
   /* ---------------------------------------------- */
   /* ---------------------------------------------- */
   /* ---------------------NOSOTROS------------------------- */
+  body {
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ----------------------MEMBRESIA------------------------ */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ---------------------------------------------- */
+    /* ----------------------HTML-COMPRA----------------------- */
+  }
   body .nosotros .contenedor {
     padding: 50px 10% 100px 10%;
   }
@@ -957,10 +1092,6 @@ body .contenedor .grid-container .item-dos ul li {
     font-size: 4rem;
     line-height: 60px;
   }
-  /* ---------------------------------------------- */
-  /* ---------------------------------------------- */
-  /* ---------------------------------------------- */
-  /* ----------------------MEMBRESIA------------------------ */
   body .contenedor .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -982,9 +1113,23 @@ body .contenedor .grid-container .item-dos ul li {
   body .contenedor .grid-container .item {
     padding: 30px;
   }
-  /* ---------------------------------------------- */
-  /* ---------------------------------------------- */
-  /* ---------------------------------------------- */
+  body main .pago {
+    padding: 120px 0px;
+    flex-direction: row;
+  }
+  body main .pago .fondo-pelado {
+    width: 40%;
+    height: 393px;
+    border-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  body main .pago .contenedor {
+    width: 40%;
+    border-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
