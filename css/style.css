@@ -880,7 +880,7 @@ main .pago .contenedor button:hover {
     width: 100%;
   }
   body .publicidad-fondo .publi {
-    background-image: linear-gradient(90deg, rgba(0, 56, 120, 0.9) 0%, rgba(70, 126, 179, 0.5) 49%, rgba(53, 102, 148, 0.9) 100%), url("https://i.ibb.co/VW17ZksF/entrenando-publi.jpg");
+    background-image: linear-gradient(90deg, rgba(0, 56, 120, 0.9) 0%, rgba(70, 126, 179, 0.5) 49%, rgba(53, 102, 148, 0.9) 100%), url("../../img/entrenando-publi.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;
